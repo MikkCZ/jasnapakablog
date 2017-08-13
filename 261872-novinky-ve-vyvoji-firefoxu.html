@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<!-- Mirrored from jasnapaka.bloguje.cz/261872-novinky-ve-vyvoji-firefoxu.html by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:38:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+<head><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS - Mozilla" href="tema-2-mozilla.xml" /><link rel="alternate" type="application/rss+xml" title="Komentáře" href="comments.xml" /> 
+ <meta http-equiv="content-language" content="cs" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> 
+ <meta name="robots" content="all,follow" />
+ <meta name="author" content="Pavel Cvrček [JasnaPaka], mailto:jasnapaka@jasnapaka.com" />
+ <meta name="copyright" content="Pavel Cvrček" />
+ <meta name="keywords" content="Firefox, Thunderbird, Mozilla, Sunbird, SeaMonkey" />
+ <meta name="description" content="Aktuální novinky o Firefoxu, Thunderbirdu a dalších aplikacích Mozilla. Užitečné návody, tipy a rady." />
+
+ 
+ <title>Novinky ve vývoji Firefoxu - JasnaPaka Blog</title>
+ 
+ <link type="text/css" rel="stylesheet" href="css2849.css" title="Základní styl" />
+ <link rel="search" type="application/opensearchdescription+xml" title="JasnaPaka Blog" href="osd.xml" />
+ <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="alternate" type="application/atom+xml" title="ATOM" href="atom.xml" />
+</head>
+<body>
+<!-- (C)2000-2008 Gemius SA - gemiusAudience / bloguje.cz / Bloguje -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('..hK6LR3j7Y7SsSlu.85f2a0HZFNLuLMgs6aWr23goz.O7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="../static.bloguje.cz.s3.amazonaws.com/xgemius.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+function addSearchEngine() {
+ if ((window.external) && (typeof window.external.addSearchEngine == "function")) {
+ window.external.addSearchEngine ("osd.xml", 
+ "favicon.png", "JasnaPaka Blog", "JasnaPaka Blog");
+ }
+ else {
+ alert("Váš prohlížeč bohužel nepodporuje vyhledávací moduly ve formátu OpenSearch.\nTy podporuje Mozilla Firefox 2.0 a Internet Explorer 7.0. Případně jejich novější verze.");
+ }
+}
+
+//-->
+</script>
+
+<div><span id="top" /></div>
+<p id="hide">
+ <a href="#posts">Přeskočit navigaci</a>
+</p>
+
+<div id="page">
+<div style="padding: 10px 0 10px 10px;margin:10px; border: 2px solid #1F4363;margin: 0 0 15px 0;background-color: #F0F6F9;">
+ Tento blog byl již <strong>ukončen</strong>. Aktuální novinky ze světa Mozilly nyní hledejte na webu <a href="http://www.mozilla.cz/" title="Mozilla.cz: Mozilla v České republice">Mozilla.cz</a>.
+</div>
+
+ <div id="header">
+ <table style="border:0"><tr><td id="blog-caption" style="border:0; width: 700px">
+
+ 
+ <div id="caption"><a href="index.html" title="Dění okolo Firefoxu, Thunderbirdu, Mozilly ..." id="heading">JasnaPaka Blog</a></div>
+
+
+ <p id="subheading">Firefox, Thunderbird, Mozilla, novinky, tipy, rady...</p> </td>
+ <td id="blog-search">
+
+<!-- Google CSE Search Box Begins -->
+ <form id="searchbox_006927761123917035100:l49kun9lnne" action="http://www.google.com/cse">
+ <div>
+ <input type="hidden" name="cx" value="006927761123917035100:l49kun9lnne" />
+ <input type="hidden" name="cof" value="FORID:0" />
+ <input type="hidden" name="ie" value="iso-8859-2" />
+ <input name="q" type="text" size="20" />
+ <input type="submit" name="sa" value="Vyhledat" />
+ </div>
+ </form>
+<!-- Google CSE Search Box Ends -->
+ 
+ </td>
+ </tr></table> 
+ </div>
+ 
+ <div id="contents">
+ <div id="lmenu">
+ <div class="menu-topic"><strong>NAVIGACE</strong></div>
+ <ul>
+ <li><a href="http://www.mozilla.cz/" title="Dění okolo Firefoxu, Thunderbirdu ...">Novinky</a></li>
+ <li><a href="http://www.mozilla.cz/produkty/firefox/" title="Pár slov o Firefoxu">O Firefoxu</a></li>
+ <li><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k Firefoxu a Thunderbirdu">Návody</a></li>
+ <li><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Stáhnout</a></li>
+ </ul> 
+ 
+ <div id="rss-pos">
+ <a href="rss.xml" title="RSS příspěvků"><img src="rss.png" alt="RSS" width="16" height="16" class="rss-pic" /></a> 
+ <a href="javascript:addSearchEngine()" title="Přidat vyhledávací modul"><img src="opensearch.png" alt="Vyhledávací modul" width="16" height="16" class="rss-pic" /></a>
+ </div>
+
+ <div class="menu-topic"><strong>ARCHIV</strong></div>
+ 
+ <ul>
+ <li><a href="0909archiv.html">září 2009</a></li><li><a href="0908archiv.html">srpen 2009</a></li><li><a href="0907archiv.html">červenec 2009</a></li><li><a href="0906archiv.html">červen 2009</a></li><li><a href="0905archiv.html">květen 2009</a></li><li><a href="0904archiv.html">duben 2009</a></li><li><a href="0903archiv.html">březen 2009</a></li><li><a href="0902archiv.html">únor 2009</a></li><li><a href="0901archiv.html">leden 2009</a></li><li><a href="0812archiv.html">prosinec 2008</a></li><li><a href="0811archiv.html">listopad 2008</a></li><li><a href="0810archiv.html">říjen 2008</a></li><li><a href="0809archiv.html">září 2008</a></li><li><a href="0808archiv.html">srpen 2008</a></li><li><a href="0807archiv.html">červenec 2008</a></li><li><a href="0806archiv.html">červen 2008</a></li><li><a href="0805archiv.html">květen 2008</a></li><li><a href="0804archiv.html">duben 2008</a></li><li><a href="0803archiv.html">březen 2008</a></li><li><a href="0802archiv.html">únor 2008</a></li><li><a href="0801archiv.html">leden 2008</a></li><li><a href="0712archiv.html">prosinec 2007</a></li><li><a href="0711archiv.html">listopad 2007</a></li><li><a href="0710archiv.html">říjen 2007</a></li><li><a href="0709archiv.html">září 2007</a></li><li><a href="0708archiv.html">srpen 2007</a></li><li><a href="0707archiv.html">červenec 2007</a></li><li><a href="0706archiv.html">červen 2007</a></li><li><a href="0705archiv.html">květen 2007</a></li><li><a href="0704archiv.html">duben 2007</a></li><li><a href="0703archiv.html">březen 2007</a></li><li><a href="0702archiv.html">únor 2007</a></li><li><a href="0701archiv.html">leden 2007</a></li><li><a href="0612archiv.html">prosinec 2006</a></li><li><a href="0611archiv.html">listopad 2006</a></li><li><a href="0610archiv.html">říjen 2006</a></li><li><a href="0609archiv.html">září 2006</a></li><li><a href="0608archiv.html">srpen 2006</a></li><li><a href="0607archiv.html">červenec 2006</a></li><li><a href="0606archiv.html">červen 2006</a></li><li><a href="0605archiv.html">květen 2006</a></li><li><a href="0604archiv.html">duben 2006</a></li><li><a href="0603archiv.html">březen 2006</a></li><li><a href="0602archiv.html">únor 2006</a></li><li><a href="0601archiv.html">leden 2006</a></li><li><a href="0512archiv.html">prosinec 2005</a></li><li><a href="0511archiv.html">listopad 2005</a></li><li><a href="0510archiv.html">říjen 2005</a></li><li><a href="0509archiv.html">září 2005</a></li><li><a href="0508archiv.html">srpen 2005</a></li>
+ </ul>
+
+ <div>
+ <div style="margin-top:5px"><a href="http://www.softeu.cz/"><img src="img/softeu-icon.png" alt="Ikona SoftEU" /></a></div>
+
+ <div style="margin-top:5px"><a href="http://www.bloguje.cz/"><img src="../www.bloguje.cz/bloguje.png" alt="bloguje.cz" /></a></div>
+
+
+ </div>
+ </div>
+
+<div id="rmenu">
+
+<div class="menu-topic"><strong>NÁVODY A TIPY</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla"><img src="img/help-64.png" alt="Návody a tipy" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla">Řešení problémů<br />Návody, jak ...<br />Triky</a>
+</td></tr></table>
+</div>
+
+
+<div class="menu-topic"><strong>PODPORA K FIREFOXU</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu"><img src="img/sumo-logo.png" alt="Česká podpora k Firefoxu" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu">Česká<br />podpora<br />k Firefoxu</a>
+</td></tr></table>
+</div>
+
+<div class="menu-topic"><strong>STÁHNOUT</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird..."><img src="img/download-icon.png" alt="Download" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Firefox<br />Thunderbird<br />a další...</a>
+</td></tr></table>
+</div>
+
+</div>
+
+
+ <div id="posts">
+ 
+
+ <div class="post">
+
+
+<h1 class="post-caption">Novinky ve vývoji Firefoxu</h1>
+
+<p>V průběhu posledních 14 dní přinesla vývojová verze <a href="http://firefox.czilla.cz/" title="Přejděte na Firefox!">Firefoxu</a> několik zajímavých novinek.</p>
+
+<ul>
+  <li><strong>Upravené prohlížení v panelech</strong><br />
+  Počínaje dnešním nočním buildem (2005-01-21) obsahuje Firefox upravené prohlížení v panelech. Základní změna spočívá v přesunutí ikonky na zavírání panelu z pravé strany lišty s otevřenými panely přímo na "ouška" panelů podobně, jako to má třeba <a href="http://www.opera.com/" title="Opera: Domovská stránka prohlížeče" hreflang="en">Opera</a>. Bohužel jsem prozatím nenalezl možnost, jak provést přepnutí na původní nastavení. Snad bude tato možnost přidána později. <a href="http://weblogs.mozillazine.org/ben/archives/009210.html" title="Improving Tabbed Browsing" hreflang="en">Více informací...</a><br /><br /> <img src="../www.jasnapaka.com/images/screenshots/ff-radek.png" title="Nové prohlížení v panelech" /><br /><br />
+  
+  </li>
+  <li><strong>Odstranění voleb Číst poštu a Nová zpráva z nabídky Nástroje</strong><br />
+  Dvě funkce, které podle mě nemají v prohlížeči typu Firefox co dělat. Dobře, že budou pryč.  <br /><br />
+  </li>
+  <li><strong>Lepší možnosti ladění memory leaků</strong><br />
+  Často se Firefoxu vyčítá, že je příliš paměťově náročný. To je z části pravda a zejména i díky tomu, že dosud neexistoval jednoduchý mechanismus na vyhledávání úniků paměti (paměť, která je alokována, ale již ne korektně dealokována). Nyní je již vše jinak a  <a href="http://dbaron.org/log/2006-01#e20060110a" title="Please file good memory leak bugs" hreflang="en">podrobnosti si můžete přečíst</a> ve <a href="http://dbaron.org/log/" title="David Baron: Weblog" hreflang="en">weblogu Davida Barona</a>.
+  </li>
+</ul>
+
+
+
+<p><strong>Přečtěte si také</strong>:</p>
+
+<ul>
+ <li><a href="263695-dve-zajimave-stranky-o-tvorbe-webu.html" title="Dvě zajímavé stránky o tvorbě webu">Dvě zajímavé stránky o tvorbě webu</a></li>
+ <li><a href="261751-typetester.html" title="Typetester">Typetester</a></li>
+</ul>
+
+
+
+
+<div class="post-footer">
+ <div class="post-sign">Přidáno: 21. ledna 2006 19:12,
+ <a href="261872-novinky-ve-vyvoji-firefoxu-2.html#view-comments" title="Zobrazit komentáře">Komentáře (36)</a>,
+ <a href="261872-novinky-ve-vyvoji-firefoxu-2.html" title="Trvalý odkaz">Trvalý odkaz</a></div><div class="post-navig">
+ <a href="#top" title="Přesun na horní část stránky">nahoru</a></div>
+</div>
+
+
+
+<p> <a href="http://linkuj.cz/?id=linkuj&amp;url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F261872-novinky-ve-vyvoji-firefoxu.php&amp;title=Novinky+ve+v%C3%BDvoji+Firefoxu"><img src="../linkuj.cz/img/badge.png" style="border:0" title="Linkuj si !" alt="Linkuj si !" /></a> <a href="http://vybrali.sme.sk/submit.php?url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F261872-novinky-ve-vyvoji-firefoxu.php"><img src="../blog.sme.sk/blog/3/61630/tlacitko.gif" style="border:0" title="asdf.sk" alt="asdf.sk" /></a></p>
+
+<h3 id="view-comments" class="comments">Komentáře</h3>
+
+
+<p>
+<span class="com-blue" id="cmt_1">1</span>. <strong>Jiří Macich ml.</strong>
+
+
+<br />
+Doufám, že křížek půjde v nastavení vrátit zpět na původní místo. Toto nové umístění se mi vůbec nelíbí. Zbytečně zabírá prostor. Mám ale nepříjemný pocit, že toto nastavení ve Firefoxu nebude. Nebylo by to poprvé, co se nějaká trivialitka musí řešit formou rozšíření (např. tisk z kontextové nabídky stránky).
+</p>
+
+<p>
+<span class="com-blue" id="cmt_2">2</span>. <strong>Robin</strong>
+
+
+<br />
+Ten krizek je IMO k nicemu, doufam, ze alespon pujde vypnout, nebo se tam ubec neda-
+</p>
+
+<p>
+<span class="com-blue" id="cmt_3">3</span>. <strong>AndrewJ</strong>
+
+
+<br />
+jo, jsem taky za zrušení křížku.. klidně i v té liště, stejně zavírám panely prostředním tlačítkem
+</p>
+
+<p>
+<span class="com-blue" id="cmt_4">4</span>. <strong>Pavel</strong>
+
+
+<br />
+Já bych řekl, že prostředním tlačítkem zavírají panely úplně všichni, kteří jsou s touto funkcí seznámeni...
+</p>
+
+<p>
+<span class="com-blue" id="cmt_5">5</span>. <strong>rony</strong>
+
+
+<br />
+ja ten krizik pouzivam, nemusim totiz pri zatvarani viacerych panelov, ktore si pootvaram z googlu, hybat mysou a iba klik klik klik a su prec prec prec :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_6">6</span>. <strong>rony</strong>
+
+
+<br />
+ja ten krizik pouzivam. nemusim pri tom hybat mysou ked zatvaram panely otvorene z google.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_7">7</span>. <strong>Afu</strong>
+
+
+<br />
+Díky Pavlovi za tip s prostředním tlačítkem ;) Zavírací křížek bych ponechal na svém místě, jednak jsem si už zvykl a za další nemusím lovit na panelech ten správný jako u Opery. Řádnou správu paměti vítám, oproti Opeře je Firefox několikanásobně pomalejší.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_8">8</span>. <strong>Jiří Macich ml.</strong>
+
+
+<br />
+Já zavírám poklepáním. Prostředním tlačítkem stránku klonuji do jiného panelu :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_9">9</span>. <strong>roore</strong>
+
+
+<br />
+Kde mám hledat prostřední tlačítko? Vůbec nevím o čem tu mluvíte. Poradí mě někdo? Dík
+</p>
+
+<p>
+<span class="com-blue" id="cmt_10">10</span>. <strong>Fredy</strong>
+
+
+<br />
+To roore<br />Zmackni kolecko :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_11">11</span>. <strong>Valoun</strong>
+
+
+<br />
+To rony, Fredy, AndrewJ, Pavel:<br /><br />Prostřední tlačítko myši zavírá tab pouze ve Windows. V linuxu má zcela jinou funkci, a pak je křížek nejrychlejší možností (společně s Ctrl+W) jak tab zavřít.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_12">12</span>. <strong>mab</strong>
+
+
+<br />
+roore: mluvíme o klikání prostředním tlačítkem na záložku, často je to prostřední tlačítko schováno pod kolečkem, takže zmáčkneš kolečko. Vše zmíněná zavírá záložku, pokud si to nenastavíš jinak, jako například Jiří Macich ml.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_13">13</span>. <strong>mab</strong>
+
+
+<br />
+A za mne dodám, že já také nechci křížky na jednotlivých panelech, mám dost často otevřeno hodně stránek a to pak není nic snazšího, než při snaze se přepnout do jiného panelu ten panel díky křížku zavřít...
+</p>
+
+<p>
+<span class="com-blue" id="cmt_14">14</span>. <strong>mab</strong>
+
+
+<br />
+Valoun: Valoun klikám prostředním, jedu v linuxu, další dotaz? :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_15">15</span>. <strong>rony</strong>
+
+
+<br />
+Valoun: rozne varianty zatvarania zaloziek poznam. Napriek tomu mi ucaroval ten krizik na pevnom mieste umiestneny absolutne k celemu oknu prehliadaca. Ten uprednostnujem pred relativnym umiestnovanim krizikov na kazdej zalozke.<br />Menej ma to rozptyluje pri zatvarani viac ako 1 zalozky. :-)<br />Dakujem za odozvu :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_16">16</span>. <strong>bunak</strong>
+
+
+<br />
+prostredni chodi jak na otvirani odkazu v novem panelu tak na zavirani panelu a chodi jak ve widlich (W2K,XPpro,ME) tak v linuchu (MDK9.1). Teda s verzi 1.0.5 ktera jeste nemela chybu zabirani pameti :o)))))))))))))
+</p>
+
+<p>
+<span class="com-blue" id="cmt_17">17</span>. <strong>bunak</strong>
+
+
+<br />
+jeste dodatek to prostredni tlacitko funguje i v Opere 8.5
+</p>
+
+<p>
+<span class="com-blue" id="cmt_18">18</span>. <strong>MiK</strong>
+
+
+<br />
+Valoune, kdo může za zvrhlou linuxáckou zvyklost prostředním tlačítkem cosi kamsi kopírovat? ;) Holt výchozí volba ve FF je na Linuxu zvrhlá a třeba mně vadí. Nicméně about:config je tvůj kamarád a volba middlemouse.contentLoadURL to uspokojivě řeší.<br /><br /><br />Co se křížku na každém tabu týče, je to ústupek masám, které nemohou najít prostřední tlačítko na myši. Já si to nemohu vynachválit. Klik, klik, klik a jsou pryč, pryč, pryč. :-) Při dvaceti tabech, které v průměru naráz používám by mi křížek vadil. Nicméně když to nepůjde vypnout v nastavení, v configu, tak to půjde skrýt v userChrome.css. Masy si pak určitě budou moci nainstalovat rozšíření. :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_19">19</span>. <strong>Fretka</strong>
+
+
+<br />
+Já jsem proto zrušit všechny takové nepotřebné okrasy, jako zrovna tohle tlačítko. Jako kdyby rovnou počítali s tím, že s tím firefoxem dělám jen doma na jednadvacítce.:-|<br />Mě osobně funguje prostřední tlačítko i v MDK10.1.:-)) Jen to zabírání místa v paměti mě celkem žere. No jo 512 je jenom 512MB:-(<br />O Opeře mi nemluv. Do verze 8.0 to byl slušnej program. Pak co to začali dělat free, tak zmizelo několik fakt dobrých věcí :-(
+</p>
+
+<p>
+<span class="com-blue" id="cmt_20">20</span>. <strong>OttY</strong>
+
+
+<br />
+Skúste rozšírenie Tab Mix Plus 0.3
+</p>
+
+<p>
+<span class="com-blue" id="cmt_21">21</span>. <strong>Bohumír Bednařík (BoboCop)</strong>
+
+
+<br />
+No osobně používám pro zavírání záložek klávesovou zkratku Ctrl+F4, takže mě nějaké přesunutí tlačítka netrápí.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_22">22</span>. <strong>Ondra</strong>
+
+
+<br />
+Krizek na tabu je podle me krok vedle, zbytecne zabira misto, doufam ze pujde vypnout. Osobne na zavreni pouzivam mouse gestures a nebo dvojklik na tab levym tlacitkem (rozsireni tabmix plus), kliknuti prostrednim tlacitkem mi prijde v souvislosti se zavrenim tabu trosku neprirozene, ale to je pouze muj osobni nazor.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_23">23</span>. <strong>mab</strong>
+
+
+<br />
+Ondra: na dobré věci si člověk zvykne hned, 2-3x kikni prostředním a už pak jinak zavírat nebudeš, je to děsně návykové :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_24">24</span>. <strong>prokop</strong>
+
+
+<br />
+kdyz ja na notebooku prostredni tlacitko nemam....
+</p>
+
+<p>
+<span class="com-blue" id="cmt_25">25</span>. <strong>Otak</strong>
+
+
+<br />
+Zapnutie funkcie kolecka v linuxe: je to jednoduche - do www adresy staci napisat about:config cim sa spistupnia interne nastavenia firefoxu, tam potom treba vyhladat middlemouse.contentLoadURL a dvakrat poklepat, aby sa zmenili hodnota na false. Tot vse.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_26">26</span>. <strong>Robis</strong>
+
+
+<br />
+thx, to AndrewJ a dalsim: prostredni tlacitko - super vec. Pro me novinka.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_27">27</span>. <strong>Robis</strong>
+
+
+<br />
+Jo, malem bych zapomnel, krizek bych nechal jak je, ted kdyz znam funkci prostrednim tlacitkem mi takhle naprosto vyhovuje - taky zaviram hromadne okna pootevirana z google nebo od jinud.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_28">28</span>. <strong>Radko</strong>
+
+
+<br />
+Taky se připojím ke komentářům - tlačítko nechat tak jak je by byla asi nejlepší volba, ale zřejmě je to kvůli většímu rozšíření FF. Noví uživatelé přecházející z IE jsou z panelů mírně zmatení - a proto tlačítko na každém oušku. Nehledě na to, že z IE prostřední tlačítko myši umět používat taky nebudou.<br /><br />prokop: Taky mi vadilo, že na notebooku nemám prostřední tlačítko, ale pokud používáš touchpad a ovladače od Synaptics, je řešení celkem jednoduché: pro rolování používám oblast u pravé hrany touchpadu a jako prostřední tlačítko používám pravý dolní roh (Settings-Tapping). S poštěvákem na notebooku to bude asi horší :)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_29">29</span>. <strong>BlueB</strong>
+
+
+<br />
+Jsem pro křížky, líbily se mi i v Opeře. A zde mi chyběly. O prostředním tlačítku jsem nevěděl, asi si budu muset přečíst návod, stále něco objevuju... :o) Co takhle, že by se křížky objevovali jen když je nad záložkou myš? Jen návrh -- ušetřilo by se tím to místo, křížek by tak mohl být klidně i přes text...
+</p>
+
+<p>
+<span class="com-blue" id="cmt_30">30</span>. <strong>Bubu</strong>
+
+
+<br />
+Ja bych krizek uvital. Precijen Mack ma jen jedno tlacitko, takze o prostrednim nemuze byt ani rec :-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_31">31</span>. <strong>Pája</strong>
+
+
+<br />
+Já bych se přidal také k těm uživatelůl google. Často otevírám větší nmožství panelů a po prohlédnutí je potřebuji rychle a jednoduše pozavírat. Jeden křížek na stálém místě je proto  nejvhodnější. Navíc na uších panelů by jen zabíral místo a při otevření více panelů by se tam ani nevešel.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_32">32</span>. <strong>Lucass</strong>
+
+
+<br />
+Pomocí Tab Mix Plus jsem si ten křížek tam dal. Mně to tak vyhovuje - neznal jsem funkci prostředním tlačitek.<br /><br />Ale já si myslím, že je to přestě, jak už někdo řekl - kvůli masá a lidem, kteří vůbec neví co to je tam za panel, natož ho zavřít.<br />My to s tím umíme si to v patřičném souboru dovedeme upravit. :)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_33">33</span>. <strong>Iggi</strong>
+
+
+<br />
+krizky nebrat, zabiraji misto.. ja bych zrusil i ten jeden jedinej co tam je... myslim ze sem ho pouzil asi dva krat v zivote nez sem zkusil jestli nefunguje prostredni scrolmousebutton..
+</p>
+
+<p>
+<span class="com-blue" id="cmt_34">34</span>. <strong>Přemek</strong>
+
+
+<br />
+Mé 2 centy: křížek používám (via Tab Mix Plus), protože prostřední tlačítko mám na scrolování a jezdit myší doprava nakonec je příliš "distracting".  Určitě bych ho uvítal.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_35">35</span>. <strong>mab</strong>
+
+
+<br />
+Ti nějak nerozumím. Zavírám prostředním tlačítkem, scrolluju prostředním tlačítkem.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_36">36</span>. <strong>Medvídek</strong>
+
+
+<br />
+Přátelé, dá se tím prostředním tlačítkem zavírat aktivní panel i když je myš zrovna šouplá kdekoli na ploše a Firefox je samozřejmě v popředí?
+</p>
+
+
+
+
+<h3 class="comments">Přidat komentář</h3> 
+<p>K tomuto příspěvku není možné přidávat další komentáře.</p>
+
+
+
+
+
+</div>
+
+
+
+
+<p id="footer" class="vcard">
+&copy; 2005-2009 <span class="fn">Pavel Cvrček</span> (<span class="fn nickname">JasnaPaka</span>), e-mail: <a href="mailto:jasnapaka@jasnapaka.com" title="Napsat e-mail" class="fn email">jasnapaka@jasnapaka.com</a>, <a href="rss.xml"
+title="RSS příspěvků">RSS</a>. 
+</p>
+
+</div> <!-- posts --> 
+</div> <!-- contents -->
+
+<div id="clear">&nbsp;</div>
+
+</div> <!-- page -->
+
+<script src="../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-263132-1";
+urchinTracker();
+</script>
+
+</body>
+
+<!-- Mirrored from jasnapaka.bloguje.cz/261872-novinky-ve-vyvoji-firefoxu.html by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:38:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+</html>
+

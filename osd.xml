@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>JasnaPaka Blog</ShortName>
+  <Description>Vyhledávání příspěvků v blogu</Description>
+  <Contact>jasnapaka@jasnapaka.com</Contact>
+  <Url type="text/html" template="http://jyxo.cz/search.php?s={searchTerms}&amp;d=cz@jasnapaka.bloguje.cz" />
+  <Image height="16" width="16" type="image/ico">
+    http://jasnapaka.bloguje.cz/favicon.ico
+  </Image>
+  <LongName>JasnaPaka Blog</LongName>
+  <Developer>Pavel Cvrček</Developer>
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <InputEncoding>iso-8859-2</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>

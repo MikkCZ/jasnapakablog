@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<!-- Mirrored from jasnapaka.bloguje.cz/185927-ochrana-phpbb-proti-spamerskym-robotum.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:38:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+<head><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS - " href="index.html" /><link rel="alternate" type="application/rss+xml" title="Komentáře" href="comments.xml" /> 
+ <meta http-equiv="content-language" content="cs" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> 
+ <meta name="robots" content="all,follow" />
+ <meta name="author" content="Pavel Cvrček [JasnaPaka], mailto:jasnapaka@jasnapaka.com" />
+ <meta name="copyright" content="Pavel Cvrček" />
+ <meta name="keywords" content="Firefox, Thunderbird, Mozilla, Sunbird, SeaMonkey" />
+ <meta name="description" content="Aktuální novinky o Firefoxu, Thunderbirdu a dalších aplikacích Mozilla. Užitečné návody, tipy a rady." />
+
+ 
+ <title>Ochrana phpBB proti spamerským robotům - JasnaPaka Blog</title>
+ 
+ <link type="text/css" rel="stylesheet" href="css2849.css" title="Základní styl" />
+ <link rel="search" type="application/opensearchdescription+xml" title="JasnaPaka Blog" href="osd.xml" />
+ <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="alternate" type="application/atom+xml" title="ATOM" href="atom.xml" />
+</head>
+<body>
+<!-- (C)2000-2008 Gemius SA - gemiusAudience / bloguje.cz / Bloguje -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('..hK6LR3j7Y7SsSlu.85f2a0HZFNLuLMgs6aWr23goz.O7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="../static.bloguje.cz.s3.amazonaws.com/xgemius.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+function addSearchEngine() {
+ if ((window.external) && (typeof window.external.addSearchEngine == "function")) {
+ window.external.addSearchEngine ("osd.xml", 
+ "favicon.png", "JasnaPaka Blog", "JasnaPaka Blog");
+ }
+ else {
+ alert("Váš prohlížeč bohužel nepodporuje vyhledávací moduly ve formátu OpenSearch.\nTy podporuje Mozilla Firefox 2.0 a Internet Explorer 7.0. Případně jejich novější verze.");
+ }
+}
+
+//-->
+</script>
+
+<div><span id="top" /></div>
+<p id="hide">
+ <a href="#posts">Přeskočit navigaci</a>
+</p>
+
+<div id="page">
+<div style="padding: 10px 0 10px 10px;margin:10px; border: 2px solid #1F4363;margin: 0 0 15px 0;background-color: #F0F6F9;">
+ Tento blog byl již <strong>ukončen</strong>. Aktuální novinky ze světa Mozilly nyní hledejte na webu <a href="http://www.mozilla.cz/" title="Mozilla.cz: Mozilla v České republice">Mozilla.cz</a>.
+</div>
+
+ <div id="header">
+ <table style="border:0"><tr><td id="blog-caption" style="border:0; width: 700px">
+
+ 
+ <div id="caption"><a href="index.html" title="Dění okolo Firefoxu, Thunderbirdu, Mozilly ..." id="heading">JasnaPaka Blog</a></div>
+
+
+ <p id="subheading">Firefox, Thunderbird, Mozilla, novinky, tipy, rady...</p> </td>
+ <td id="blog-search">
+
+<!-- Google CSE Search Box Begins -->
+ <form id="searchbox_006927761123917035100:l49kun9lnne" action="http://www.google.com/cse">
+ <div>
+ <input type="hidden" name="cx" value="006927761123917035100:l49kun9lnne" />
+ <input type="hidden" name="cof" value="FORID:0" />
+ <input type="hidden" name="ie" value="iso-8859-2" />
+ <input name="q" type="text" size="20" />
+ <input type="submit" name="sa" value="Vyhledat" />
+ </div>
+ </form>
+<!-- Google CSE Search Box Ends -->
+ 
+ </td>
+ </tr></table> 
+ </div>
+ 
+ <div id="contents">
+ <div id="lmenu">
+ <div class="menu-topic"><strong>NAVIGACE</strong></div>
+ <ul>
+ <li><a href="http://www.mozilla.cz/" title="Dění okolo Firefoxu, Thunderbirdu ...">Novinky</a></li>
+ <li><a href="http://www.mozilla.cz/produkty/firefox/" title="Pár slov o Firefoxu">O Firefoxu</a></li>
+ <li><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k Firefoxu a Thunderbirdu">Návody</a></li>
+ <li><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Stáhnout</a></li>
+ </ul> 
+ 
+ <div id="rss-pos">
+ <a href="rss.xml" title="RSS příspěvků"><img src="rss.png" alt="RSS" width="16" height="16" class="rss-pic" /></a> 
+ <a href="javascript:addSearchEngine()" title="Přidat vyhledávací modul"><img src="opensearch.png" alt="Vyhledávací modul" width="16" height="16" class="rss-pic" /></a>
+ </div>
+
+ <div class="menu-topic"><strong>ARCHIV</strong></div>
+ 
+ <ul>
+ <li><a href="0909archiv.html">září 2009</a></li><li><a href="0908archiv.html">srpen 2009</a></li><li><a href="0907archiv.html">červenec 2009</a></li><li><a href="0906archiv.html">červen 2009</a></li><li><a href="0905archiv.html">květen 2009</a></li><li><a href="0904archiv.html">duben 2009</a></li><li><a href="0903archiv.html">březen 2009</a></li><li><a href="0902archiv.html">únor 2009</a></li><li><a href="0901archiv.html">leden 2009</a></li><li><a href="0812archiv.html">prosinec 2008</a></li><li><a href="0811archiv.html">listopad 2008</a></li><li><a href="0810archiv.html">říjen 2008</a></li><li><a href="0809archiv.html">září 2008</a></li><li><a href="0808archiv.html">srpen 2008</a></li><li><a href="0807archiv.html">červenec 2008</a></li><li><a href="0806archiv.html">červen 2008</a></li><li><a href="0805archiv.html">květen 2008</a></li><li><a href="0804archiv.html">duben 2008</a></li><li><a href="0803archiv.html">březen 2008</a></li><li><a href="0802archiv.html">únor 2008</a></li><li><a href="0801archiv.html">leden 2008</a></li><li><a href="0712archiv.html">prosinec 2007</a></li><li><a href="0711archiv.html">listopad 2007</a></li><li><a href="0710archiv.html">říjen 2007</a></li><li><a href="0709archiv.html">září 2007</a></li><li><a href="0708archiv.html">srpen 2007</a></li><li><a href="0707archiv.html">červenec 2007</a></li><li><a href="0706archiv.html">červen 2007</a></li><li><a href="0705archiv.html">květen 2007</a></li><li><a href="0704archiv.html">duben 2007</a></li><li><a href="0703archiv.html">březen 2007</a></li><li><a href="0702archiv.html">únor 2007</a></li><li><a href="0701archiv.html">leden 2007</a></li><li><a href="0612archiv.html">prosinec 2006</a></li><li><a href="0611archiv.html">listopad 2006</a></li><li><a href="0610archiv.html">říjen 2006</a></li><li><a href="0609archiv.html">září 2006</a></li><li><a href="0608archiv.html">srpen 2006</a></li><li><a href="0607archiv.html">červenec 2006</a></li><li><a href="0606archiv.html">červen 2006</a></li><li><a href="0605archiv.html">květen 2006</a></li><li><a href="0604archiv.html">duben 2006</a></li><li><a href="0603archiv.html">březen 2006</a></li><li><a href="0602archiv.html">únor 2006</a></li><li><a href="0601archiv.html">leden 2006</a></li><li><a href="0512archiv.html">prosinec 2005</a></li><li><a href="0511archiv.html">listopad 2005</a></li><li><a href="0510archiv.html">říjen 2005</a></li><li><a href="0509archiv.html">září 2005</a></li><li><a href="0508archiv.html">srpen 2005</a></li>
+ </ul>
+
+ <div>
+ <div style="margin-top:5px"><a href="http://www.softeu.cz/"><img src="img/softeu-icon.png" alt="Ikona SoftEU" /></a></div>
+
+ <div style="margin-top:5px"><a href="http://www.bloguje.cz/"><img src="../www.bloguje.cz/bloguje.png" alt="bloguje.cz" /></a></div>
+
+
+ </div>
+ </div>
+
+<div id="rmenu">
+
+<div class="menu-topic"><strong>NÁVODY A TIPY</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla"><img src="img/help-64.png" alt="Návody a tipy" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla">Řešení problémů<br />Návody, jak ...<br />Triky</a>
+</td></tr></table>
+</div>
+
+
+<div class="menu-topic"><strong>PODPORA K FIREFOXU</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu"><img src="img/sumo-logo.png" alt="Česká podpora k Firefoxu" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu">Česká<br />podpora<br />k Firefoxu</a>
+</td></tr></table>
+</div>
+
+<div class="menu-topic"><strong>STÁHNOUT</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird..."><img src="img/download-icon.png" alt="Download" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Firefox<br />Thunderbird<br />a další...</a>
+</td></tr></table>
+</div>
+
+</div>
+
+
+ <div id="posts">
+ 
+
+ <div class="post">
+
+
+<h1 class="post-caption">Ochrana phpBB proti spamerským robotům</h1>
+
+<p>Více méně z nutnosti již nějaký čas spravuji jedno webové fórum postavené na <a href="http://www.phpbb.com/" title="phpBB: Domovská stránka" hreflang="en">phpBB</a>. Jedná se o celkem pěkný systém pro snadnou tvoru webového fóra bez nutnosti jakýchkoliv programátorských dovedností. Jelikož je hojně využíváno, je též často zneužíváno k různým aktivitám, které správci neradi vidí.</p>
+
+<p>Zatímco proti hackování fóra se můžete bránit pravidelnou aktualizací, proti různým spamerským robotům je to již těžší. Spamerský robot si můžete představit jako jakýsi automat, který šmejdí po webu a hledá kde by prováděl svoji nekalou činnost. V případě <a href="http://www.phpbb.com/" title="phpBB: Domovská stránka" hreflang="en">phpBB</a> se jedná o dva typy robotů. Před nedávnem jsem se jim trochu podíval na zoubek, protože mě řešení jejich následků jednoduše přestalo bavit.</p>
+
+<p>První, budeme je nazývat třeba <strong>registrační roboti</strong>, nedělají nic jiného, než že si zaregistrují nějaký nesmyslný nick a tím jejich aktivita končí. Poznáte je snadno. Nicky takových uživatelských kont mají tvar nicku + nějaké to číslo&nbsp;&ndash; např. charlie1984. Dále mají většinou nastaven jako výchozí jazyk angličtinu či ruštinu. Hlavním ukazatelem je ale "uživatelova domovská stránka", která obsahuje odkaz na nějakou "super hyper xxx site".</p>
+
+<p>Proč to roboti dělají? Důvod je vcelku jednoduchý. Fulltextové vyhledávače, jako například <a href="http://www.google.com/" title="Google: Domovská stránka" hreflang="en">Google</a>, procházejí jednotlivé webové stránky a indexují je. Výsledná kvalita zaindexované stránky je též mimo jiné počítána i na základě počtu odkazů, které na ni vedou, což má být jakýsi ukazatel kvality. Webové fórum postavené na <a href="http://www.phpbb.com/" title="phpBB: Domovská stránka" hreflang="en">phpBB</a> je samozřejmě indexováno také, čehož roboti využívají a registrují nesmyslná konta. Obrana proti tomuto typu spamu je snadná&nbsp;&ndash; v nastavení fóra zapnete volbu <span class="nabidka">Povolit visuální ověřování</span>, čímž zajistíte, že pro dokončení registrace bude muset uživatel přečíst znaky z náhodně generovaného obrázku. To uživatel zvládne, robot nikoliv.</p>
+
+<p>Druhý typ robotů se na nic neptá. Prostě rovnou do náhodné sekce fóra přidá příspěvek plný odkazů. Obranou může být povinná registrace, ale existují fóra, která se zabývají podporou nějakého produktu a tam je nutnost registrace nežádoucí. Proč by se měl uživatel, který chce položit jen jeden dotaz, registrovat? Proč by měl doplácet na chování automatických robotů? Tak přesně tento problém jsem řešil a řešení bylo vcelku snadné. Posuďte sami.</p>
+
+<p>Vše, co potřebujete, je být chytřejší jak robot. Pokud ve fóru uživatel zadává příspěvek, jde přes formulář, kam jej zadá. Po odeslání se data z formuláře odešlou dalšímu skriptu k ověření jejich platnosti a následně jsou publikována. Robot na to jde jinak. Nějaký formulář? Nepotřebuje a pošle data přímo skriptu na zpracování. Toho lze velmi dobře využít.</p>
+
+<p>V šabloně v cestě <span class="soubor">/templates/(jméno_vašeho_motivu)/posting_body.tpl</span> přidejte jako součást vstupního formuláře další prvek, který bude skrytý a dejte mu nějakou výchozí hodnotu. V našem případě "test4321".</p>
+
+<pre class="codear"><code>&lt;input type="hidden" name="kontrola" value="test4321" /&gt;
+</code></pre>
+
+<p>Hodnotu tohoto formulářového prvku je po odeslání skriptem potřeba získat. V souboru <span class="soubor">posting.php</span> vyhledejte řádek:</p>
+
+<pre class="codear"><code>$message = ( !empty($HTTP_POST_VARS['message']) ) ? 
+$HTTP_POST_VARS['message'] : &rdquo;;
+</code></pre>
+
+<p>Ten získává do proměnné <span class="funkce">$message</span> text z hlavního pole formuláře. Pod tento řádek přidejte:</p>
+
+<pre class="codear"><code>$kontrola = ( !empty($HTTP_POST_VARS['kontrola']) ) ? 
+$HTTP_POST_VARS['kontrola'] : &rdquo;;
+</code></pre>
+
+<p>Tím získáte obsah vašeho skrytého prvku z formuláře. Kousek za tímto kódem naleznete volání funkce <span class="funkce">prepare_post</span>, do níž zadejte proměnnou <span class="funkce">$kontrola</span> jako další vstupní parametr (nejlépe jako poslední). Nyní si otevřete soubor <span class="soubor">/includes/functions_post.php</span>, v něm vyhledejte hlavičku uvedené funkce a přidejte též jako poslední vstup proměnnou <span class="funkce">&$kontrola</span>.</p>
+
+
+<p>Nyní již zbývá jen odstavit robota. V tuto chvíli, pokud příspěvek přišel od fyzického uživatele, má proměnná <span class="funkce">$kontrola</span> výchozí hodnotu z formuláře. Pokud se jedná o robota, nemá ji a postačí jakékoliv chybové hlášení přidat do proměnné <span class="funkce">$error_msg</span>. Může to vypadat třeba následujícím způsobem.</p>
+
+<pre class="codear"><code>if ($kontrola != "test4321") {
+  $error_msg .= 'Pokud vidíte tuto zprávu, pak nastala 
+chyba a informujte prosím správce fóra.';
+}
+</code></pre>
+
+<p>Příspěvek nebude přidán a formulář se zobrazí znovu, aby uživatel zadal opravu, ale s tím si již robot neporadí. Pro kontrolu doporučuji nechat si zasílat všechny příspěvky, které neprojdou touto podmínku, na e-mail. Pro kontrolu, co kdyby.</p>
+
+<p>Jaká je úspěšnost výše uvedeného způsobu? Z mého pozorování zatím 100%. Nezaznamenal jsem žádný spam od automatického robota, ani chybu, kdy by fyzický uživatel díky této ochraně nemohl odeslat svůj příspěvek. A o to přeci šlo, ne?</p>
+
+<h3>Aktualizace</h3>
+
+<p>Vše je jen otázkou času a jak jsem zjistil, objevili se roboti, kteří umí projít i výše uvedenou ochranu. Nejspíš dokáží vyplnit formulář a odeslat jej. Řešení tohoto problému může být dvojí:</p>
+
+<ul>
+  <li>Přejmenovat textarea, kam uživatel vkládá příspěvek. Prostě změnit hodnotu "name" (+ samozřejmě i v ověřovací části). Pokud to nezabere, vložit před ní další textarea s popiskem, že se sem nemá nic vpisovat a celé to skrýt pomocí <abbr title="Cascading Style Sheets" lang="en">CSS</abbr>. Samozřejmě správnou textarea přejmenovat a tu fiktivní pojmenovat tak, jak se pole na zadání zprávy standardně jmenuje (atribut name). To by mělo robota zmást.</li>
+  <li>Pro anonymní přidávání příspěvků přidat combobox (výběrový seznam) s popisným textem "Publikovat příspěvek?" a možnostmi "ano" či "ne" s tím, že hodnota "ne" bude jako výchozí a uživatel bude muset zvolit hodnotu "ano". Řešení nikterak složité, ale robot si s ním neporadí.</li>
+</ul>
+
+
+
+
+<p><strong>Přečtěte si také</strong>:</p>
+
+<ul>
+ <li><a href="192630-proc-neni-opera-uspesna-jako-firefox.html" title="Proč není Opera úspěšná jako Firefox">Proč není Opera úspěšná jako Firefox</a></li>
+ 
+</ul>
+
+
+
+
+<div class="post-footer">
+ <div class="post-sign">Přidáno: 18. srpna 2005 21:01,
+ <a href="185927-ochrana-phpbb-proti-spamerskym-robotum.html#view-comments" title="Zobrazit komentáře">Komentáře (16)</a>,
+ <a href="185927-ochrana-phpbb-proti-spamerskym-robotum.html" title="Trvalý odkaz">Trvalý odkaz</a></div><div class="post-navig">
+ <a href="#top" title="Přesun na horní část stránky">nahoru</a></div>
+</div>
+
+
+
+<p> <a href="http://linkuj.cz/?id=linkuj&amp;url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F185927-ochrana-phpbb-proti-spamerskym-robotum.php&amp;title=Ochrana+phpBB+proti+spamersk%C3%BDm+robot%C5%AFm"><img src="../linkuj.cz/img/badge.png" style="border:0" title="Linkuj si !" alt="Linkuj si !" /></a> <a href="http://vybrali.sme.sk/submit.php?url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F185927-ochrana-phpbb-proti-spamerskym-robotum.php"><img src="../blog.sme.sk/blog/3/61630/tlacitko.gif" style="border:0" title="asdf.sk" alt="asdf.sk" /></a></p>
+
+<h3 id="view-comments" class="comments">Komentáře</h3>
+
+
+<p>
+<span class="com-blue" id="cmt_1">1</span>. <strong>JayFinch</strong>
+
+
+<br />
+Chytre a jednoduche.<br /><br />BTW kde presne v konfiguraci phpBB najdu &quot;Povolit visuální ověřování&quot;?
+</p>
+
+<p>
+<span class="com-blue" id="cmt_2">2</span>. <strong>JasnaPaka</strong>
+
+
+<br />
+Je to primo v administracni casti pod Konfigurace tj. te stranky s vetsinou hlavnich predvoleb. Je to tam od verze 2.0.11. Starsi verzi dnes provozovat by byla docela vrazda.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_3">3</span>. <strong>Gioel</strong>
+
+
+<br />
+Sikovne :) vidno ze sa vyznas :)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_4">4</span>. <strong>Silver</strong>
+
+
+<br />
+Mám verziu 2.0.11 a vizuálne overovanie tam nie je. čo s tým?
+</p>
+
+<p>
+<span class="com-blue" id="cmt_5">5</span>. <strong>Xsoft</strong>
+
+
+<br />
+No .. odpovedel sis sam ;)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_6">6</span>. <strong>Klinki</strong>
+
+
+<br />
+Prosim mohl bys mi poradit kam presne do /templates/(jméno_vašeho_motivu)/posting_body.tpl mam dat ten   ? nakonec nebo kam ?  Napis mi prosim radek predtim nebo tak... 
+</p>
+
+<p>
+<span class="com-blue" id="cmt_7">7</span>. <strong>JasnaPaka</strong>
+
+
+<br />
+Kamkoliv dovnitř formuláře. Každopádně před odesílací tlačítko.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_8">8</span>. <strong>Yawgmoth</strong>
+
+
+<br />
+ad vizuální ověřování - bohužel nezáleží jen na verzi phpbb, ale také na vzhledu, který používáte ...<br />v novém subSilver (defaultní vzhled) ta možnost je, ale pokud si po průběžných aktualizacích necháváte starý a zažitý vzhled, tak ta možnost v konfiguraci vůbec nebude
+</p>
+
+<p>
+<span class="com-blue" id="cmt_9">9</span>. <strong>M4rekX</strong>
+
+
+<br />
+A proti Hackerom odporucam aby ste si dali najnovsiu verziu PHPBB cize phpbb 2.0.19 ;-)<br />+ MOD Cracker Tracker<br /><br /><br />
+</p>
+
+<p>
+<span class="com-blue" id="cmt_10">10</span>. <strong>Márty</strong>
+
+
+<br />
+Co je zač ten MOD Cracker Tracker??? A kde ho najdu??? Díky.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_11">11</span>. <strong>qaker</strong>
+
+
+<br />
+Powered by phpBB 2.0.19 &amp;copy; tohle mam ale sem asi slepy a nikde tam nemuzu najit to "v nastavení fóra zapnete volbu Povolit visuální ověřování"
+</p>
+
+<p>
+<span class="com-blue" id="cmt_12">12</span>. <strong>peter</strong>
+
+
+<br />
+Ani ja som to tlacitko nemohol najst je to preto ze pouzivas iny vzhlad fora ako je SubSilver a ten tuto moznost v sebe nema.<br /><br />Zmen si vzhlad na subSilver nastav si "povoli visualne zobrazovanie" a zmen vzhlad naspet. :)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_13">13</span>. <strong>Jery</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.vosa.us" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Ahoj, chci se zeptat jestli máš zkušenosti s phpBB pod United Nuke, šel by tam Tvůj postup aplikovat?<br />phpBB je tam totiž jako modul, takže jeho root je ...portal/modules/forums<br />kdyby tě to zajímalo, moje icq je 1662804<br />Jery
+</p>
+
+<p>
+<span class="com-blue" id="cmt_14">14</span>. <strong>JasnaPaka</strong>
+(<a href="index.html" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_13">[13]</a> Nenapadá mě důvod, proč by to nešlo. Jinak zkušenost nemam.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_15">15</span>. <strong>mattisse</strong>
+
+
+<br />
+kam mám vložit to chybové hlášení?asi do posting_body ale kam?
+</p>
+
+<p>
+<span class="com-blue" id="cmt_16">16</span>. <strong>Medyn</strong>
+
+
+<br />
+Myslim si ze system jako je phpBB by s takovymi eventualitami mel kazdopadne pocitat a ne to nechat aby si to kazdy uzivatel resil po svem.. a nebo vlasten neresil, pokud to neni alespon pokrocily programator...
+</p>
+
+
+
+
+<h3 class="comments">Přidat komentář</h3> 
+<p>K tomuto příspěvku není možné přidávat další komentáře.</p>
+
+
+
+
+
+</div>
+
+
+
+
+<p id="footer" class="vcard">
+&copy; 2005-2009 <span class="fn">Pavel Cvrček</span> (<span class="fn nickname">JasnaPaka</span>), e-mail: <a href="mailto:jasnapaka@jasnapaka.com" title="Napsat e-mail" class="fn email">jasnapaka@jasnapaka.com</a>, <a href="rss.xml"
+title="RSS příspěvků">RSS</a>. 
+</p>
+
+</div> <!-- posts --> 
+</div> <!-- contents -->
+
+<div id="clear">&nbsp;</div>
+
+</div> <!-- page -->
+
+<script src="../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-263132-1";
+urchinTracker();
+</script>
+
+</body>
+
+<!-- Mirrored from jasnapaka.bloguje.cz/185927-ochrana-phpbb-proti-spamerskym-robotum.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:38:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+</html>
+

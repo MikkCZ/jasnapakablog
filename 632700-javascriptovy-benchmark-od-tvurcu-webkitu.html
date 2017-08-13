@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<!-- Mirrored from jasnapaka.bloguje.cz/632700-javascriptovy-benchmark-od-tvurcu-webkitu.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:31:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+<head><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS - Mozilla" href="tema-2-mozilla.xml" /><link rel="alternate" type="application/rss+xml" title="Komentáře" href="comments.xml" /> 
+ <meta http-equiv="content-language" content="cs" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> 
+ <meta name="robots" content="all,follow" />
+ <meta name="author" content="Pavel Cvrček [JasnaPaka], mailto:jasnapaka@jasnapaka.com" />
+ <meta name="copyright" content="Pavel Cvrček" />
+ <meta name="keywords" content="Firefox, Thunderbird, Mozilla, Sunbird, SeaMonkey" />
+ <meta name="description" content="Aktuální novinky o Firefoxu, Thunderbirdu a dalších aplikacích Mozilla. Užitečné návody, tipy a rady." />
+
+ 
+ <title>JavaScriptový benchmark od tvůrců WebKitu - JasnaPaka Blog</title>
+ 
+ <link type="text/css" rel="stylesheet" href="css2849.css" title="Základní styl" />
+ <link rel="search" type="application/opensearchdescription+xml" title="JasnaPaka Blog" href="osd.xml" />
+ <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="alternate" type="application/atom+xml" title="ATOM" href="atom.xml" />
+</head>
+<body>
+<!-- (C)2000-2008 Gemius SA - gemiusAudience / bloguje.cz / Bloguje -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('..hK6LR3j7Y7SsSlu.85f2a0HZFNLuLMgs6aWr23goz.O7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="../static.bloguje.cz.s3.amazonaws.com/xgemius.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+function addSearchEngine() {
+ if ((window.external) && (typeof window.external.addSearchEngine == "function")) {
+ window.external.addSearchEngine ("osd.xml", 
+ "favicon.png", "JasnaPaka Blog", "JasnaPaka Blog");
+ }
+ else {
+ alert("Váš prohlížeč bohužel nepodporuje vyhledávací moduly ve formátu OpenSearch.\nTy podporuje Mozilla Firefox 2.0 a Internet Explorer 7.0. Případně jejich novější verze.");
+ }
+}
+
+//-->
+</script>
+
+<div><span id="top" /></div>
+<p id="hide">
+ <a href="#posts">Přeskočit navigaci</a>
+</p>
+
+<div id="page">
+<div style="padding: 10px 0 10px 10px;margin:10px; border: 2px solid #1F4363;margin: 0 0 15px 0;background-color: #F0F6F9;">
+ Tento blog byl již <strong>ukončen</strong>. Aktuální novinky ze světa Mozilly nyní hledejte na webu <a href="http://www.mozilla.cz/" title="Mozilla.cz: Mozilla v České republice">Mozilla.cz</a>.
+</div>
+
+ <div id="header">
+ <table style="border:0"><tr><td id="blog-caption" style="border:0; width: 700px">
+
+ 
+ <div id="caption"><a href="index.html" title="Dění okolo Firefoxu, Thunderbirdu, Mozilly ..." id="heading">JasnaPaka Blog</a></div>
+
+
+ <p id="subheading">Firefox, Thunderbird, Mozilla, novinky, tipy, rady...</p> </td>
+ <td id="blog-search">
+
+<!-- Google CSE Search Box Begins -->
+ <form id="searchbox_006927761123917035100:l49kun9lnne" action="http://www.google.com/cse">
+ <div>
+ <input type="hidden" name="cx" value="006927761123917035100:l49kun9lnne" />
+ <input type="hidden" name="cof" value="FORID:0" />
+ <input type="hidden" name="ie" value="iso-8859-2" />
+ <input name="q" type="text" size="20" />
+ <input type="submit" name="sa" value="Vyhledat" />
+ </div>
+ </form>
+<!-- Google CSE Search Box Ends -->
+ 
+ </td>
+ </tr></table> 
+ </div>
+ 
+ <div id="contents">
+ <div id="lmenu">
+ <div class="menu-topic"><strong>NAVIGACE</strong></div>
+ <ul>
+ <li><a href="http://www.mozilla.cz/" title="Dění okolo Firefoxu, Thunderbirdu ...">Novinky</a></li>
+ <li><a href="http://www.mozilla.cz/produkty/firefox/" title="Pár slov o Firefoxu">O Firefoxu</a></li>
+ <li><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k Firefoxu a Thunderbirdu">Návody</a></li>
+ <li><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Stáhnout</a></li>
+ </ul> 
+ 
+ <div id="rss-pos">
+ <a href="rss.xml" title="RSS příspěvků"><img src="rss.png" alt="RSS" width="16" height="16" class="rss-pic" /></a> 
+ <a href="javascript:addSearchEngine()" title="Přidat vyhledávací modul"><img src="opensearch.png" alt="Vyhledávací modul" width="16" height="16" class="rss-pic" /></a>
+ </div>
+
+ <div class="menu-topic"><strong>ARCHIV</strong></div>
+ 
+ <ul>
+ <li><a href="0909archiv.html">září 2009</a></li><li><a href="0908archiv.html">srpen 2009</a></li><li><a href="0907archiv.html">červenec 2009</a></li><li><a href="0906archiv.html">červen 2009</a></li><li><a href="0905archiv.html">květen 2009</a></li><li><a href="0904archiv.html">duben 2009</a></li><li><a href="0903archiv.html">březen 2009</a></li><li><a href="0902archiv.html">únor 2009</a></li><li><a href="0901archiv.html">leden 2009</a></li><li><a href="0812archiv.html">prosinec 2008</a></li><li><a href="0811archiv.html">listopad 2008</a></li><li><a href="0810archiv.html">říjen 2008</a></li><li><a href="0809archiv.html">září 2008</a></li><li><a href="0808archiv.html">srpen 2008</a></li><li><a href="0807archiv.html">červenec 2008</a></li><li><a href="0806archiv.html">červen 2008</a></li><li><a href="0805archiv.html">květen 2008</a></li><li><a href="0804archiv.html">duben 2008</a></li><li><a href="0803archiv.html">březen 2008</a></li><li><a href="0802archiv.html">únor 2008</a></li><li><a href="0801archiv.html">leden 2008</a></li><li><a href="0712archiv.html">prosinec 2007</a></li><li><a href="0711archiv.html">listopad 2007</a></li><li><a href="0710archiv.html">říjen 2007</a></li><li><a href="0709archiv.html">září 2007</a></li><li><a href="0708archiv.html">srpen 2007</a></li><li><a href="0707archiv.html">červenec 2007</a></li><li><a href="0706archiv.html">červen 2007</a></li><li><a href="0705archiv.html">květen 2007</a></li><li><a href="0704archiv.html">duben 2007</a></li><li><a href="0703archiv.html">březen 2007</a></li><li><a href="0702archiv.html">únor 2007</a></li><li><a href="0701archiv.html">leden 2007</a></li><li><a href="0612archiv.html">prosinec 2006</a></li><li><a href="0611archiv.html">listopad 2006</a></li><li><a href="0610archiv.html">říjen 2006</a></li><li><a href="0609archiv.html">září 2006</a></li><li><a href="0608archiv.html">srpen 2006</a></li><li><a href="0607archiv.html">červenec 2006</a></li><li><a href="0606archiv.html">červen 2006</a></li><li><a href="0605archiv.html">květen 2006</a></li><li><a href="0604archiv.html">duben 2006</a></li><li><a href="0603archiv.html">březen 2006</a></li><li><a href="0602archiv.html">únor 2006</a></li><li><a href="0601archiv.html">leden 2006</a></li><li><a href="0512archiv.html">prosinec 2005</a></li><li><a href="0511archiv.html">listopad 2005</a></li><li><a href="0510archiv.html">říjen 2005</a></li><li><a href="0509archiv.html">září 2005</a></li><li><a href="0508archiv.html">srpen 2005</a></li>
+ </ul>
+
+ <div>
+ <div style="margin-top:5px"><a href="http://www.softeu.cz/"><img src="img/softeu-icon.png" alt="Ikona SoftEU" /></a></div>
+
+ <div style="margin-top:5px"><a href="http://www.bloguje.cz/"><img src="../www.bloguje.cz/bloguje.png" alt="bloguje.cz" /></a></div>
+
+
+ </div>
+ </div>
+
+<div id="rmenu">
+
+<div class="menu-topic"><strong>NÁVODY A TIPY</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla"><img src="img/help-64.png" alt="Návody a tipy" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla">Řešení problémů<br />Návody, jak ...<br />Triky</a>
+</td></tr></table>
+</div>
+
+
+<div class="menu-topic"><strong>PODPORA K FIREFOXU</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu"><img src="img/sumo-logo.png" alt="Česká podpora k Firefoxu" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu">Česká<br />podpora<br />k Firefoxu</a>
+</td></tr></table>
+</div>
+
+<div class="menu-topic"><strong>STÁHNOUT</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird..."><img src="img/download-icon.png" alt="Download" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Firefox<br />Thunderbird<br />a další...</a>
+</td></tr></table>
+</div>
+
+</div>
+
+
+ <div id="posts">
+ 
+
+ <div class="post">
+
+
+<h1 class="post-caption">JavaScriptový benchmark od tvůrců WebKitu</h1>
+
+<p>Je tomu pár měsíců, co Mozilla Corporation <a href="570683-mozilla-uvolnila-nastroj-na-testovani-javascriptovych-enginu-prohlizecu.html" title="Mozilla uvolnila nástroj na testování JavaScriptových enginů prohlížečů">uvolnila nástroj</a> na testování JavaScriptových enginů prohlížečů. Uvolnění nástroje mělo velký úspěch a například tvůrci Opery a Safari díky němu odhalili několik potencionálně nebezpečných chyb ve svých produktech. Včera Mozilla Corporation následovali tvůrci WebKitu, renderovacího jádra, na kterém je hlavně založen webový prohlížeč Safari. Ti uvolnili <a href="http://webkit.org/blog/152/announcing-sunspider-09/" title="Surfin&#8217; Safari: Announcing SunSpider 0.9" hreflang="en">JavaScriptový benchmark SunSpider</a>, který slouží k výkonostnímu testování JavaScriptových enginů.</p>
+
+<p>JavaScriptových testů běhá dnes po webu řada. Jejich kvalita je různá a většina z nich je zaměřena na různé části JavaScriptu. Jak tvůrci WebKitu uvádí, všechny testy jim přišly moc umělé, protože prý neodrážely reálné webové aplikace a reálné použití JavaScriptu. Rozhodli se tedy napsat si vlastní benchmark, který to dle nich odráží. Nedalo mi to, abych si neprovedl menší test. Testování jsem prováděl na již postarší konfiguraci AMD Sepron 2200+, 2 GB RAM s operačním systémem Windows Vista. Výsledky jsou zajímavé:</p>
+
+<table border="1" class="nice">
+<thead>
+  <tr>
+    <td><strong>Prohlížeč</strong></td>
+    <td><strong>Celkový výsledek</strong></td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Internet Explorer 7.0</td>
+    <td>219903.0ms +/- 4.3% (<a href="http://webkit.org/perf/sunspider-0.9/sunspider-results.html?%7B%223d-cube%22:%5B1150,998,1065,952,1059%5D,%223d-morph%22:%5B1212,1437,1203,1215,1221%5D,%223d-raytrace%22:%5B1717,1613,1691,1695,1783%5D,%22access-binary-trees%22:%5B1152,990,1032,1013,1179%5D,%22access-fannkuch%22:%5B1971,1810,1910,1828,1896%5D,%22access-nbody%22:%5B933,831,935,830,870%5D,%22access-nsieve%22:%5B1195,1293,1188,1202,1198%5D,%22bitops-3bit-bits-in-byte%22:%5B993,943,940,952,979%5D,%22bitops-bits-in-byte%22:%5B1221,1115,1162,1049,1095%5D,%22bitops-bitwise-and%22:%5B1096,1118,1044,1072,1045%5D,%22bitops-nsieve-bits%22:%5B1175,1198,1172,1201,1239%5D,%22controlflow-recursive%22:%5B1125,985,1052,986,989%5D,%22crypto-aes%22:%5B1075,1095,1028,1114,1031%5D,%22crypto-md5%22:%5B713,704,699,709,701%5D,%22crypto-sha1%22:%5B781,713,724,765,821%5D,%22date-format-tofte%22:%5B1091,1062,1052,1063,1063%5D,%22date-format-xparb%22:%5B1004,999,1119,1013,1073%5D,%22math-cordic%22:%5B1207,1187,1211,1176,1148%5D,%22math-partial-sums%22:%5B679,664,661,667,674%5D,%22math-spectral-norm%22:%5B887,888,891,899,887%5D,%22regexp-dna%22:%5B1192,1041,1080,1102,1090%5D,%22string-base64%22:%5B133253,138642,147161,135363,149686%5D,%22string-fasta%22:%5B1272,1211,1216,1205,1226%5D,%22string-tagcloud%22:%5B15248,15988,16125,15879,16034%5D,%22string-unpack-code%22:%5B1216,1277,1295,1316,1307%5D,%22string-validate-input%22:%5B37194,37307,38629,38547,37262%5D%7D">Detaily</a>)</td>
+  </tr>
+  <tr>
+    <td>Firefox 2.0.0.11</td>
+    <td>51462.4ms +/- 0.6% (<a href="http://webkit.org/perf/sunspider-0.9/sunspider-results.html?%7B%223d-cube%22:%5B1838,1812,1876,1822,1815%5D,%223d-morph%22:%5B3946,3827,3899,3915,3933%5D,%223d-raytrace%22:%5B1016,991,941,956,950%5D,%22access-binary-trees%22:%5B517,506,418,422,426%5D,%22access-fannkuch%22:%5B1045,1084,1082,1139,1169%5D,%22access-nbody%22:%5B1714,1624,1745,1641,1689%5D,%22access-nsieve%22:%5B926,988,974,863,929%5D,%22bitops-3bit-bits-in-byte%22:%5B815,726,721,789,784%5D,%22bitops-bits-in-byte%22:%5B786,882,1023,781,778%5D,%22bitops-bitwise-and%22:%5B9682,9633,9696,9681,9612%5D,%22bitops-nsieve-bits%22:%5B1113,1178,1226,1117,1113%5D,%22controlflow-recursive%22:%5B244,277,277,276,274%5D,%22crypto-aes%22:%5B686,661,691,728,724%5D,%22crypto-md5%22:%5B695,699,630,601,587%5D,%22crypto-sha1%22:%5B634,677,595,643,636%5D,%22date-format-tofte%22:%5B2994,2964,3005,2989,2966%5D,%22date-format-xparb%22:%5B9121,9135,9193,9169,9059%5D,%22math-cordic%22:%5B2100,2186,2129,2141,2107%5D,%22math-partial-sums%22:%5B1119,1124,1176,1116,1185%5D,%22math-spectral-norm%22:%5B804,812,817,799,1034%5D,%22regexp-dna%22:%5B2215,2141,2224,2272,2292%5D,%22string-base64%22:%5B1585,1821,1590,1604,1617%5D,%22string-fasta%22:%5B1197,1404,1253,1303,1258%5D,%22string-tagcloud%22:%5B1145,1167,1164,1139,1196%5D,%22string-unpack-code%22:%5B1998,2057,1958,1948,1958%5D,%22string-validate-input%22:%5B1341,1332,1400,1330,1350%5D%7D">Detaily</a>)</td>
+  </tr>
+  <tr>
+    <td>Firefox 3.0 Beta 3 NB</td>
+    <td>24210.8ms +/- 1.0% (<a href="http://webkit.org/perf/sunspider-0.9/sunspider-results.html?{%223d-cube%22:[1151,1298,1337,1225,1219],%223d-morph%22:[2260,2191,2205,2211,2165],%223d-raytrace%22:[751,709,706,730,748],%22access-binary-trees%22:[349,349,347,365,363],%22access-fannkuch%22:[1105,1117,1110,1105,1106],%22access-nbody%22:[1325,1333,1363,1334,1333],%22access-nsieve%22:[678,712,675,674,680],%22bitops-3bit-bits-in-byte%22:[597,606,602,605,602],%22bitops-bits-in-byte%22:[704,673,677,675,673],%22bitops-bitwise-and%22:[1770,1794,1768,1798,1766],%22bitops-nsieve-bits%22:[816,815,816,847,838],%22controlflow-recursive%22:[249,256,265,248,249],%22crypto-aes%22:[551,543,573,554,548],%22crypto-md5%22:[411,474,462,464,424],%22crypto-sha1%22:[430,427,427,434,429],%22date-format-tofte%22:[958,918,929,922,907],%22date-format-xparb%22:[549,527,525,535,524],%22math-cordic%22:[1272,1284,1272,1271,1276],%22math-partial-sums%22:[1016,977,985,986,985],%22math-spectral-norm%22:[544,544,585,545,544],%22regexp-dna%22:[1551,1642,1633,1615,1622],%22string-base64%22:[945,898,974,993,920],%22string-fasta%22:[949,949,968,955,948],%22string-tagcloud%22:[835,824,831,832,842],%22string-unpack-code%22:[1451,1444,1522,1722,1488],%22string-validate-input%22:[809,837,802,815,869]}">Detaily</a>)</td>
+  </tr>
+  <tr>
+    <td>Opera 9.25</td>
+    <td>25826.8ms +/- 2.0% (<a href="http://webkit.org/perf/sunspider-0.9/sunspider-results.html?%7B%223d-cube%22:%5B687,693,690,693,675%5D,%223d-morph%22:%5B937,938,1054,959,943%5D,%223d-raytrace%22:%5B686,693,687,718,620%5D,%22access-binary-trees%22:%5B331,324,319,322,325%5D,%22access-fannkuch%22:%5B1787,1770,1756,1738,1748%5D,%22access-nbody%22:%5B583,569,581,576,564%5D,%22access-nsieve%22:%5B909,910,909,951,997%5D,%22bitops-3bit-bits-in-byte%22:%5B518,512,472,525,544%5D,%22bitops-bits-in-byte%22:%5B782,803,797,799,895%5D,%22bitops-bitwise-and%22:%5B1164,1188,1194,1187,1935%5D,%22bitops-nsieve-bits%22:%5B1137,1124,1112,1147,1123%5D,%22controlflow-recursive%22:%5B472,476,481,477,482%5D,%22crypto-aes%22:%5B770,739,795,734,728%5D,%22crypto-md5%22:%5B728,758,737,759,792%5D,%22crypto-sha1%22:%5B599,486,478,555,483%5D,%22date-format-tofte%22:%5B479,479,467,468,493%5D,%22date-format-xparb%22:%5B1279,1249,1269,1287,1268%5D,%22math-cordic%22:%5B2012,2055,2082,2024,2061%5D,%22math-partial-sums%22:%5B875,859,863,856,878%5D,%22math-spectral-norm%22:%5B574,646,571,582,585%5D,%22regexp-dna%22:%5B523,524,527,539,543%5D,%22string-base64%22:%5B762,648,721,2088,663%5D,%22string-fasta%22:%5B1977,1885,1963,648,1909%5D,%22string-tagcloud%22:%5B1423,1479,1438,1922,1385%5D,%22string-unpack-code%22:%5B3445,2829,2851,2889,2871%5D,%22string-validate-input%22:%5B618,614,710,661,689%5D%7D">Detaily</a>)</td>
+  </tr>
+  <tr>
+    <td>Safari 3.0 Beta</td>
+    <td>29832.2ms +/- 1.2% (<a href="http://webkit.org/perf/sunspider-0.9/sunspider-results.html?%7B%223d-cube%22:%5B1183,1248,1194,1213,1200%5D,%223d-morph%22:%5B1986,1915,1930,2087,2016%5D,%223d-raytrace%22:%5B1140,1174,1197,1169,1146%5D,%22access-binary-trees%22:%5B534,522,561,542,549%5D,%22access-fannkuch%22:%5B1918,1993,2060,2010,1920%5D,%22access-nbody%22:%5B1025,1031,1094,1057,1037%5D,%22access-nsieve%22:%5B1636,1645,1655,1929,1649%5D,%22bitops-3bit-bits-in-byte%22:%5B1105,1054,1074,1002,1077%5D,%22bitops-bits-in-byte%22:%5B1180,1184,1187,1229,1212%5D,%22bitops-bitwise-and%22:%5B873,840,841,891,849%5D,%22bitops-nsieve-bits%22:%5B1708,1726,1729,1818,1731%5D,%22controlflow-recursive%22:%5B746,830,748,753,779%5D,%22crypto-aes%22:%5B618,805,624,712,616%5D,%22crypto-md5%22:%5B1102,1266,1052,1107,1057%5D,%22crypto-sha1%22:%5B1024,1032,1031,1115,1044%5D,%22date-format-tofte%22:%5B880,875,919,963,886%5D,%22date-format-xparb%22:%5B1463,1601,1565,1480,1533%5D,%22math-cordic%22:%5B1969,1896,1882,1902,1884%5D,%22math-partial-sums%22:%5B758,752,759,776,764%5D,%22math-spectral-norm%22:%5B984,1009,1024,926,1071%5D,%22regexp-dna%22:%5B914,950,969,915,911%5D,%22string-base64%22:%5B981,997,1025,983,1011%5D,%22string-fasta%22:%5B1181,1096,1072,1061,1127%5D,%22string-tagcloud%22:%5B930,871,856,867,860%5D,%22string-unpack-code%22:%5B710,696,684,742,716%5D,%22string-validate-input%22:%5B985,990,1022,1001,981%5D%7D">Detaily</a>)</td>
+  </tr>        
+</tbody> 
+</table>
+
+<p>Nejprve pár slov k testu a výsledkům. SunSpider se <a href="http://webkit.org/perf/sunspider-0.9/sunspider.html" title="SunSpider: Test" hreflang="en">spouští z webu</a> a provádí jednotlivé sady testů. Ty prohlížeč celkem slušně zatíží, takže je dobré při testu nechat systém v klidu, aby jím nebyl výsledek ovlivněn. Ve výše uvedené tabulce jsou uvedeny celkové výsledky testů jednotlivých prohlížečů. Klepnutím na odkaz <em>Detaily</em> se dostanete na stránku s detailními statistikami, z které vyčtete, jak si ten či onen prohlížeč vedl v konkrétním testu. U výsledku platí, že čím menší číslo, žím lepší výsledek. Procento za číslem uvádí odchylku, která se při testování vyskytla. Jak jsem si všiml, sada testů se protočí nejméně 2x.</p>
+
+<p>Jak tedy dopadly testy? Musím říci, že mě překvapily. Na mém PC dopadla nejlépe vývojová verze Firefoxu 3.0, následována Operou 9.25, Safari 3.0 Beta, Firefoxem 2.0.0.11 a z testovaných prohlížečů skončil jako poslední Internet Explorer 7.0. Co jsem pročítal komentáře pod oznámením nástroje, většinou jsem četl, že u řady lidí byl nejrychlejší Safari s Operou, a až poté následovala vývojová verze Firefoxu 3.0. Na druhou stranu je pravda, že většina z uveřejněných výsledků testů byla provedena pod Mac OS X a jen jeden pod Windows XP. Jiné testy pod Windows Vista než ty moje jsem nenalezl.</p>
+
+<p>Co lze z testu vyčíst? Těžká odpověď. Jak je z mého výsledku patrné, co konfigurace PC a systém, toť pravděpodobně jiný výsledek. Naměřené hodnoty by se tedy neměly přeceňovat. Nakolik uvedený test odráží realitu dnešních webových aplikací, těžko říci, je možné, že ano, ale to při svých znalostech nedokážu posoudit. Z hlediska uživatelů Firefoxu je pozitivní, že vykonávání JavaScriptu je ve vývojové verzi Firefoxu 3.0 rychlejší než v předchozí verzi. Co jsem koukal do různých výsledků testů, zlepšení se pohybuje v řádu desítek procent a třeba u mě se čas provedení testů snížil na polovinu. Celkově ale platí, že o kvalitě JavaScriptového enginu rozhoduje nejenom jeho rychlost, ale i kvalita a chybovost podpory JavaScriptu. To se ale měří pomocí testu obtížně.</p>
+
+
+
+<p><strong>Přečtěte si také</strong>:</p>
+
+<ul>
+ <li><a href="632724-oficialni-forum-podpory-firefoxu-otevreno.html" title="Oficiální fórum podpory Firefoxu otevřeno">Oficiální fórum podpory Firefoxu otevřeno</a></li>
+ <li><a href="632431-firefox-3-0-beta-2-k-dispozici.html" title="Firefox 3.0 Beta 2 k dispozici">Firefox 3.0 Beta 2 k dispozici</a></li>
+</ul>
+
+
+
+
+<div class="post-footer">
+ <div class="post-sign">Přidáno: 19. prosince 2007 21:24,
+ <a href="632700-javascriptovy-benchmark-od-tvurcu-webkitu.html#view-comments" title="Zobrazit komentáře">Komentáře (3)</a>,
+ <a href="632700-javascriptovy-benchmark-od-tvurcu-webkitu.html" title="Trvalý odkaz">Trvalý odkaz</a></div><div class="post-navig">
+ <a href="#top" title="Přesun na horní část stránky">nahoru</a></div>
+</div>
+
+
+
+<p> <a href="http://linkuj.cz/?id=linkuj&amp;url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F632700-javascriptovy-benchmark-od-tvurcu-webkitu.php&amp;title=JavaScriptov%C3%BD+benchmark+od+tv%C5%AFrc%C5%AF+WebKitu"><img src="../linkuj.cz/img/badge.png" style="border:0" title="Linkuj si !" alt="Linkuj si !" /></a> <a href="http://vybrali.sme.sk/submit.php?url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F632700-javascriptovy-benchmark-od-tvurcu-webkitu.php"><img src="../blog.sme.sk/blog/3/61630/tlacitko.gif" style="border:0" title="asdf.sk" alt="asdf.sk" /></a></p>
+
+<h3 id="view-comments" class="comments">Komentáře</h3>
+
+
+<p>
+<span class="com-blue" id="cmt_1">1</span>. <strong>sutrus</strong>
+
+
+<br />
+Dobry vecer,<br />Sve vlastni testy jsem provadel na:<br /><br />Notebook HP nw8000,Intel Pentium M 1700, 1GB RAM, WinXP SP2 <br /><br />Firefox 3.0 Beta2 19627.8ms +/- 2.0%<br />IE7               61725.8ms +/- 2.0%<br />Opera 9.5         bez vysledku ????<br />crypto:                  NaNms +/- NaN%<br />    aes:                 314.4ms +/- 33.2%<br />    md5:                 NaNms +/- NaN%<br />    sha1:                298.2ms +/- 5.5%<br />Jinak podle podrobnosti testu prvni misto<br /><br />Test jsem opakoval dvakrat bez vetsich rozdilu.<br />Zvlastni jsou dost velke rozdily mezi testy IE7.<br />Muze to zpusobit procesor (AMD/Intel)?
+</p>
+
+<p>
+<span class="com-blue" id="cmt_2">2</span>. <strong>Pavel "JasnaPaka" Cvrček</strong>
+
+
+<br />
+<a href="#cmt_1">[1]</a> Taky mě "výkon" IE překvapil. Těžko říct, čím to je. Možná OS, procesor... netuším. Jinak v uvedeném testu Opera z nějakého důvodu někdy selhává. Co jsem četl, stává se to u Opery 9.25 (u mě ale v pořádku), ale poslední vývojová verze Opery 9.5 by prý měla být v pořádku.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_3">3</span>. <strong>yed_</strong>
+
+
+<br />
+ntb HP nx6110, celeron 1.4G, 512MB RAM, Gentoo:<br /><br />ff 3 beta 2<br />Total: 21859.2ms +/- 0.5%<br /><br />ff 2.0.0.9<br />Total: 32601.0ms +/- 1.6%<br /><br />opera 9.24<br />Total: 17674.2ms +/- 1.4%<br /><br />ie 6 pres wine .)<br />Total: 78245.5ms +/- 2.1%<br />
+</p>
+
+
+
+
+<h3 class="comments">Přidat komentář</h3> 
+<p>K tomuto příspěvku není možné přidávat další komentáře.</p>
+
+
+
+
+
+</div>
+
+
+
+
+<p id="footer" class="vcard">
+&copy; 2005-2009 <span class="fn">Pavel Cvrček</span> (<span class="fn nickname">JasnaPaka</span>), e-mail: <a href="mailto:jasnapaka@jasnapaka.com" title="Napsat e-mail" class="fn email">jasnapaka@jasnapaka.com</a>, <a href="rss.xml"
+title="RSS příspěvků">RSS</a>. 
+</p>
+
+</div> <!-- posts --> 
+</div> <!-- contents -->
+
+<div id="clear">&nbsp;</div>
+
+</div> <!-- page -->
+
+<script src="../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-263132-1";
+urchinTracker();
+</script>
+
+</body>
+
+<!-- Mirrored from jasnapaka.bloguje.cz/632700-javascriptovy-benchmark-od-tvurcu-webkitu.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:31:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+</html>
+

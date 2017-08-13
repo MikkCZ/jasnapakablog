@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<rss version="2.0">
+<channel>
+<title>JasnaPaka Blog</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+<description>Mozilla, Firefox, Thunderbird, novinky, tipy, rady...</description>
+<language>cs</language>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>www.bloguje.cz</generator>
+<ttl>120</ttl>
+<lastBuildDate>Wed, 10 Feb 2010 23:46:15 +0100</lastBuildDate>
+<pubDate>Wed, 10 Feb 2010 23:46:15 +0100</pubDate>
+<image>
+<url>http://jasnapaka.bloguje.cz/blogavatar.png</url>
+<width>80</width>
+<height>80</height>
+<title>JasnaPaka Blog</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+</image>
+<item>
+<title>Ukončení blogu a přesun na Mozilla.cz</title>
+<link>http://jasnapaka.bloguje.cz/810446-ukonceni-blogu-a-presun-na-mozilla-cz.php</link>
+<description>Již nadpis hovoří za vše. Dneškem ukončuji psaní tohoto blogu a všechny další novinky ze světa Mozilly, tipy a rady budu psát na nově vzniklém webu Mozilla.cz (RSS). Obsah, který zde vznikal několik posledních let, zůstane zachován, případně bude přesunut právě na Mozilla.cz. Díky všem za dosavadní přízeň a spolu s dalšími se na vás těším na webu Mozilla.cz, který vám toho do budoucna nabídne podstatně více, než dosud nabízel tento blog.</description>
+<pubDate>Mon, 14 Sep 2009 13:07:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/810446-ukonceni-blogu-a-presun-na-mozilla-cz.php</guid>
+</item>
+<item>
+<title>SeaMonkey 2 Beta 2 s prohlížením zpráv v panelech</title>
+<link>http://jasnapaka.bloguje.cz/810138-seamonkey-2-beta-2-s-prohlizenim-zprav-v-panelech.php</link>
+<description>Balík webových aplikací SeaMonkey se dočkal vydání verze 2.0 Beta 2. Ta oproti předchozí verzi přináší podporu prohlížení poštovních zpráv v panelech, nový výchozí vzhled na platformě Mac OS X či možnost obnovy dříve zavřených oken prohlížeče. Bližší informace jsou dostupné v poznámkách k vydání a detailní přehled novinek přináší též blog SeaMonkey Trunk Tracker. SeaMonkey 2 Beta 2 je k dispozici volně ke stažení. Česká verze není aktuálně k dispozici</description>
+<pubDate>Sun, 13 Sep 2009 00:21:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/810138-seamonkey-2-beta-2-s-prohlizenim-zprav-v-panelech.php</guid>
+</item>
+<item>
+<title>Thunderbird 3 a změna umístění tlačítek pro odpověď/přeposlání</title>
+<link>http://jasnapaka.bloguje.cz/810116-thunderbird-3-a-zmena-umisteni-tlacitek-pro-odpoved-preposlani.php</link>
+<description>Thunderbird měl až dosud umístěny tlačítka pro odpověď na zprávu či přeposlání zprávy na hlavní liště aplikace. Počínaje verzí 3 jsou tato tlačítka nově umístěna na hlavičce zprávy a jak si můžete v aktuální vývojové verzi všimnout, nejsou již ve výchozím nastavení na hlavní liště obsažena. Pokud je chcete zpět, můžete si je na lištu znovu umístit v dialogu její konfigurace, který je dostupný v místní nabídce nad lištou.</description>
+<pubDate>Sat, 12 Sep 2009 21:51:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/810116-thunderbird-3-a-zmena-umisteni-tlacitek-pro-odpoved-preposlani.php</guid>
+</item>
+<item>
+<title>Thunderbird 3 obsahuje nové vyhledávání</title>
+<link>http://jasnapaka.bloguje.cz/809896-thunderbird-3-obsahuje-nove-vyhledavani.php</link>
+<description>V aktuální vývojové verzi Thunderbirdu 3 se objevilo dlouho připravované nové globální vyhledávání. Jeho základem je proces na pozadí, který průběžně indexuje obsah zpráv, aby bylo pozdější vyhledávání rychlé. Samotné vyhledávání pak má nově možnost fulltextového prohledávání zpráv. Výsledky fulltextového vyhledávání jsou dostupné v samostatném panelu, jehož vzhled můžete vidět na obrázku níže. Vyhledávání na něm lze dále zpřesňovat pomocí voleb po levé straně výsledků.</description>
+<pubDate>Fri, 11 Sep 2009 19:13:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/809896-thunderbird-3-obsahuje-nove-vyhledavani.php</guid>
+</item>
+<item>
+<title>Jsou tu Firefox 3.5.3 a 3.0.14 s kontrolou Flashe</title>
+<link>http://jasnapaka.bloguje.cz/809752-jsou-tu-firefox-3-5-3-a-3-0-14-s-kontrolou-flashe.php</link>
+<description>Mozilla Corporation včera večer uvolnila Firefox 3.5.3 a 3.0.14. Jedná se o pravidelné bezpečnostní aktualizace, které opravují pár desítek chyb včetně několika bezpečnostních. Připomínám, že při prvním spuštění jsou uživatelé upozorňování na staré verze Flashe, které obsahují bezpečnostní chyby a mohou tak představovat významné bezpečnostní riziko pro uživatele. Obě verze Firefoxu jsou jako vždy šířeny skrze automatické aktualizace, ale lze je též stáhnout samostatně</description>
+<pubDate>Thu, 10 Sep 2009 20:51:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/809752-jsou-tu-firefox-3-5-3-a-3-0-14-s-kontrolou-flashe.php</guid>
+</item>
+<item>
+<title>Vyšel Postbox 1.0 s interaktivním našeptáváním kontaktů</title>
+<link>http://jasnapaka.bloguje.cz/809581-vysel-postbox-1-0-s-interaktivnim-naseptavanim-kontaktu.php</link>
+<description>Poštovní klient Postbox vyšel ve verzi 1.0. Po šestnácti betaverzích se tak uživatelé dočkali finální verze. Oproti předchozí betaverzi je jako hlavní novinka prezentováno našeptávání kontaktů při psané nové zprávy, kdy se kromě standardního jména a e-mailu kontaktů ukazuje v našeptávání i jeho fotka (pokud je vyplněna) a našeptávání též umí dohledávat kontakty ze sociálních sítí jako je Facebook či Twitter</description>
+<pubDate>Wed, 09 Sep 2009 21:43:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/809581-vysel-postbox-1-0-s-interaktivnim-naseptavanim-kontaktu.php</guid>
+</item>
+<item>
+<title>Česká příručka k Firefoxu 3.5</title>
+<link>http://jasnapaka.bloguje.cz/809172-ceska-prirucka-k-firefoxu-3-5.php</link>
+<description>Pavel Chovančík ze společnosti FOXINUS solutions s.r.o. dnes uveřejnil českou příručku k Firefoxu 3.5. Možná si ještě vzpomínáte na podobné příručky pro Firefox 2 či 3. Stejně jako v minulých verzích příručka provází webovým prohlížečem Firefox a na konci přináší přehled tipů z tohoto blogu. Celkem má 138 stran a je k dispozici volně ke stažení (PDF). Společnosti FOXINUS solutions s.r.o. patří naše poděkování.</description>
+<pubDate>Mon, 07 Sep 2009 22:29:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/809172-ceska-prirucka-k-firefoxu-3-5.php</guid>
+</item>
+<item>
+<title>Firefox 3.7 a změna v otevírání stránky v novém panelu</title>
+<link>http://jasnapaka.bloguje.cz/808689-firefox-3-7-a-zmena-v-otevirani-stranky-v-novem-panelu.php</link>
+<description>V posledních vývojových verzích Firefoxu 3.7 jste mohli zaregistrovat jednu zajímavou změnu. Představte si situaci, kdy máte otevřeno několik panelů a z jednoho z nich provedete otevření odkazu do nového panelu. Takto nově otevřený panel se automaticky ocitne za všemi otevřenými panely. Počínaje Firefoxem 3.7 se bude takto otevřený panel zařazovat hned za aktuální panel. Idea spočívá v tom, že nově otevřený panel má souvislost s aktivním panelem, a proto by s ním měl být &#8222;seskupen&#8220;</description>
+<pubDate>Sun, 06 Sep 2009 11:44:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/808689-firefox-3-7-a-zmena-v-otevirani-stranky-v-novem-panelu.php</guid>
+</item>
+<item>
+<title>Firefox začal podporovat lehké motivy z Personas</title>
+<link>http://jasnapaka.bloguje.cz/808685-firefox-zacal-podporovat-lehke-motivy-z-personas.php</link>
+<description>Lehké motivy vzhledu Personas, které vznikly jako experimentální projekt Mozilla Labs, se staly součástí vývojové verze Firefoxu 3.7. Podpora je aktuálně &#8222;na pozadí&#8220;, takže prozatím nehledejte uživatelsky přívětivý způsob instalace či možnost správy ve Správci doplňků. Pokud se nemůžete dočkat, můžete si lehké motivy vzhledu instalovat skrze kód, který je uváděn v odkazovaném příspěvku. Ačkoliv je podpora aktuálně zahrnuta ve Firefoxu 3</description>
+<pubDate>Sun, 06 Sep 2009 11:22:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/808685-firefox-zacal-podporovat-lehke-motivy-z-personas.php</guid>
+</item>
+<item>
+<title>Vyšel Fennec 1.0 Alfa 3 pro Windows Mobile</title>
+<link>http://jasnapaka.bloguje.cz/808505-vysel-fennec-1-0-alfa-3-pro-windows-mobile.php</link>
+<description>Fennec, verze Firefoxu pro mobilní zařízení, vyšel v třetí alfa verzi pro Windows Mobile. Ta přináší podporu pro celoobrazovkový režim, zlepšenou podporu jednotlivých zařízení s Windows Mobile a hlavně výrazné zlepšení rychlosti aplikace. K tomu navíc přichází úpravený vzhled aplikace a vylepšená podpora pro změnu velikosti stránky. Třetí alfa verzi jsem si vyzkoušel a zejména zrychlení aplikace je znatelné. I přesto se mi zdá, že aplikace prozatím není dostatečně rychlá</description>
+<pubDate>Sat, 05 Sep 2009 13:46:00 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/808505-vysel-fennec-1-0-alfa-3-pro-windows-mobile.php</guid>
+</item>
+</channel></rss>

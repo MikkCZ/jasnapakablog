@@ -1,0 +1,68 @@
+body {
+	font-family: Verdana, "Geneva CE", lucida, sans-serif;
+	font-size: 12px;
+	background-color : white;
+	color : Black;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	font-size : 13px;
+	margin : 5px 0px 15px 18px;
+	padding-left: 0px;
+}
+
+#obsah {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-topic {
+	font-size : 13px;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+  border: 0;
+}
+
+#footer {
+	font-size : 10px;
+	text-align : center; 
+	border-top : 1px solid #C7C7C7;
+	padding-top : 3px;
+	margin : 10px 0 5px 0;
+}
+
+a {
+	color: #0001A8;
+	background-color: inherit;
+}
+
+a:hover, a:visited {
+	color : #BB2222;
+	background-color: inherit;
+}
+
+.rel-ram {
+	border: 1px solid Silver;
+	padding: 5px;
+	margin: 5px 0 5px 0;
+        margin-bottom: 15px;
+}
+
+.rel-date{
+	margin: 0;
+	padding: 0;
+}
+
+#navigace-dole {
+	font-size : 10px;
+	text-align : right; 
+	border-top : 1px solid #C7C7C7;
+	padding-top : 3px;
+	margin : 10px 0 5px 0;
+  margin-bottom: 10px;  
+}

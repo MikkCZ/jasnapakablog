@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<!-- Mirrored from jasnapaka.bloguje.cz/538290-diskuse-nad-budoucnosti-xulrunneru.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:32:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+<head><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS - Mozilla" href="tema-2-mozilla.xml" /><link rel="alternate" type="application/rss+xml" title="Komentáře" href="comments.xml" /> 
+ <meta http-equiv="content-language" content="cs" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> 
+ <meta name="robots" content="all,follow" />
+ <meta name="author" content="Pavel Cvrček [JasnaPaka], mailto:jasnapaka@jasnapaka.com" />
+ <meta name="copyright" content="Pavel Cvrček" />
+ <meta name="keywords" content="Firefox, Thunderbird, Mozilla, Sunbird, SeaMonkey" />
+ <meta name="description" content="Aktuální novinky o Firefoxu, Thunderbirdu a dalších aplikacích Mozilla. Užitečné návody, tipy a rady." />
+
+ 
+ <title>Diskuse nad budoucností XULRunneru - JasnaPaka Blog</title>
+ 
+ <link type="text/css" rel="stylesheet" href="css2849.css" title="Základní styl" />
+ <link rel="search" type="application/opensearchdescription+xml" title="JasnaPaka Blog" href="osd.xml" />
+ <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="alternate" type="application/atom+xml" title="ATOM" href="atom.xml" />
+</head>
+<body>
+<!-- (C)2000-2008 Gemius SA - gemiusAudience / bloguje.cz / Bloguje -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('..hK6LR3j7Y7SsSlu.85f2a0HZFNLuLMgs6aWr23goz.O7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="../static.bloguje.cz.s3.amazonaws.com/xgemius.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+function addSearchEngine() {
+ if ((window.external) && (typeof window.external.addSearchEngine == "function")) {
+ window.external.addSearchEngine ("osd.xml", 
+ "favicon.png", "JasnaPaka Blog", "JasnaPaka Blog");
+ }
+ else {
+ alert("Váš prohlížeč bohužel nepodporuje vyhledávací moduly ve formátu OpenSearch.\nTy podporuje Mozilla Firefox 2.0 a Internet Explorer 7.0. Případně jejich novější verze.");
+ }
+}
+
+//-->
+</script>
+
+<div><span id="top" /></div>
+<p id="hide">
+ <a href="#posts">Přeskočit navigaci</a>
+</p>
+
+<div id="page">
+<div style="padding: 10px 0 10px 10px;margin:10px; border: 2px solid #1F4363;margin: 0 0 15px 0;background-color: #F0F6F9;">
+ Tento blog byl již <strong>ukončen</strong>. Aktuální novinky ze světa Mozilly nyní hledejte na webu <a href="http://www.mozilla.cz/" title="Mozilla.cz: Mozilla v České republice">Mozilla.cz</a>.
+</div>
+
+ <div id="header">
+ <table style="border:0"><tr><td id="blog-caption" style="border:0; width: 700px">
+
+ 
+ <div id="caption"><a href="index.html" title="Dění okolo Firefoxu, Thunderbirdu, Mozilly ..." id="heading">JasnaPaka Blog</a></div>
+
+
+ <p id="subheading">Firefox, Thunderbird, Mozilla, novinky, tipy, rady...</p> </td>
+ <td id="blog-search">
+
+<!-- Google CSE Search Box Begins -->
+ <form id="searchbox_006927761123917035100:l49kun9lnne" action="http://www.google.com/cse">
+ <div>
+ <input type="hidden" name="cx" value="006927761123917035100:l49kun9lnne" />
+ <input type="hidden" name="cof" value="FORID:0" />
+ <input type="hidden" name="ie" value="iso-8859-2" />
+ <input name="q" type="text" size="20" />
+ <input type="submit" name="sa" value="Vyhledat" />
+ </div>
+ </form>
+<!-- Google CSE Search Box Ends -->
+ 
+ </td>
+ </tr></table> 
+ </div>
+ 
+ <div id="contents">
+ <div id="lmenu">
+ <div class="menu-topic"><strong>NAVIGACE</strong></div>
+ <ul>
+ <li><a href="http://www.mozilla.cz/" title="Dění okolo Firefoxu, Thunderbirdu ...">Novinky</a></li>
+ <li><a href="http://www.mozilla.cz/produkty/firefox/" title="Pár slov o Firefoxu">O Firefoxu</a></li>
+ <li><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k Firefoxu a Thunderbirdu">Návody</a></li>
+ <li><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Stáhnout</a></li>
+ </ul> 
+ 
+ <div id="rss-pos">
+ <a href="rss.xml" title="RSS příspěvků"><img src="rss.png" alt="RSS" width="16" height="16" class="rss-pic" /></a> 
+ <a href="javascript:addSearchEngine()" title="Přidat vyhledávací modul"><img src="opensearch.png" alt="Vyhledávací modul" width="16" height="16" class="rss-pic" /></a>
+ </div>
+
+ <div class="menu-topic"><strong>ARCHIV</strong></div>
+ 
+ <ul>
+ <li><a href="0909archiv.html">září 2009</a></li><li><a href="0908archiv.html">srpen 2009</a></li><li><a href="0907archiv.html">červenec 2009</a></li><li><a href="0906archiv.html">červen 2009</a></li><li><a href="0905archiv.html">květen 2009</a></li><li><a href="0904archiv.html">duben 2009</a></li><li><a href="0903archiv.html">březen 2009</a></li><li><a href="0902archiv.html">únor 2009</a></li><li><a href="0901archiv.html">leden 2009</a></li><li><a href="0812archiv.html">prosinec 2008</a></li><li><a href="0811archiv.html">listopad 2008</a></li><li><a href="0810archiv.html">říjen 2008</a></li><li><a href="0809archiv.html">září 2008</a></li><li><a href="0808archiv.html">srpen 2008</a></li><li><a href="0807archiv.html">červenec 2008</a></li><li><a href="0806archiv.html">červen 2008</a></li><li><a href="0805archiv.html">květen 2008</a></li><li><a href="0804archiv.html">duben 2008</a></li><li><a href="0803archiv.html">březen 2008</a></li><li><a href="0802archiv.html">únor 2008</a></li><li><a href="0801archiv.html">leden 2008</a></li><li><a href="0712archiv.html">prosinec 2007</a></li><li><a href="0711archiv.html">listopad 2007</a></li><li><a href="0710archiv.html">říjen 2007</a></li><li><a href="0709archiv.html">září 2007</a></li><li><a href="0708archiv.html">srpen 2007</a></li><li><a href="0707archiv.html">červenec 2007</a></li><li><a href="0706archiv.html">červen 2007</a></li><li><a href="0705archiv.html">květen 2007</a></li><li><a href="0704archiv.html">duben 2007</a></li><li><a href="0703archiv.html">březen 2007</a></li><li><a href="0702archiv.html">únor 2007</a></li><li><a href="0701archiv.html">leden 2007</a></li><li><a href="0612archiv.html">prosinec 2006</a></li><li><a href="0611archiv.html">listopad 2006</a></li><li><a href="0610archiv.html">říjen 2006</a></li><li><a href="0609archiv.html">září 2006</a></li><li><a href="0608archiv.html">srpen 2006</a></li><li><a href="0607archiv.html">červenec 2006</a></li><li><a href="0606archiv.html">červen 2006</a></li><li><a href="0605archiv.html">květen 2006</a></li><li><a href="0604archiv.html">duben 2006</a></li><li><a href="0603archiv.html">březen 2006</a></li><li><a href="0602archiv.html">únor 2006</a></li><li><a href="0601archiv.html">leden 2006</a></li><li><a href="0512archiv.html">prosinec 2005</a></li><li><a href="0511archiv.html">listopad 2005</a></li><li><a href="0510archiv.html">říjen 2005</a></li><li><a href="0509archiv.html">září 2005</a></li><li><a href="0508archiv.html">srpen 2005</a></li>
+ </ul>
+
+ <div>
+ <div style="margin-top:5px"><a href="http://www.softeu.cz/"><img src="img/softeu-icon.png" alt="Ikona SoftEU" /></a></div>
+
+ <div style="margin-top:5px"><a href="http://www.bloguje.cz/"><img src="../www.bloguje.cz/bloguje.png" alt="bloguje.cz" /></a></div>
+
+
+ </div>
+ </div>
+
+<div id="rmenu">
+
+<div class="menu-topic"><strong>NÁVODY A TIPY</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla"><img src="img/help-64.png" alt="Návody a tipy" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla">Řešení problémů<br />Návody, jak ...<br />Triky</a>
+</td></tr></table>
+</div>
+
+
+<div class="menu-topic"><strong>PODPORA K FIREFOXU</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu"><img src="img/sumo-logo.png" alt="Česká podpora k Firefoxu" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu">Česká<br />podpora<br />k Firefoxu</a>
+</td></tr></table>
+</div>
+
+<div class="menu-topic"><strong>STÁHNOUT</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird..."><img src="img/download-icon.png" alt="Download" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Firefox<br />Thunderbird<br />a další...</a>
+</td></tr></table>
+</div>
+
+</div>
+
+
+ <div id="posts">
+ 
+
+ <div class="post">
+
+
+<h1 class="post-caption">Diskuse nad budoucností XULRunneru</h1>
+
+<span class="post-obr-right"><img src="img/mozilla-logo.png" alt="Logo Mozilly" /></span>
+
+<p>Pokud sledujete dění okolo aplikací Mozilla, pak vám nejspíš v poslední době neunikly vzrušené debaty na téma <a href="http://developer.mozilla.org/en/docs/XULRunner" title="Mozilla Developer Center: Stránka o XULRunneru" hreflang="en">XULRunner</a> a budoucnost platformy Mozilla jako takové. Pokud hovořím o platformě, mám na mysli technologie Mozilla jako je <a href="http://cs.wikipedia.org/wiki/XUL" title="Česká Wikipedie: XUL">XUL</a>, <a href="http://cs.wikipedia.org/wiki/Gecko" title="Česká Wikipedie: Gecko">Gecko</a>, Necko a řadu dalších. Zkrátka to, na čem jsou následně vystavěny aplikace jako Firefox, Thunderbird, Flock a další.</p>
+
+<p>Tyto produkty jsou samostatné aplikace, které si s sebou nesou vše potřebné z platformy. Pokud tedy máte nainstalován Firefox a Thunderbird, máte na disku vlastně zčásti 2x to samé. Již v dobách Mozilla Suite vznikla idea mít části, které aplikace používají společně separátně s možností, aby je mohly jednotlivé aplikace sdílet. Vzniklo Gecko Runtime Environment (GRE), které přišlo s Mozilla Suite 1.4. Idea pěkná, ale nedotažená, takže výsledek byl dodáván pouze s verzí pro Windows. Byla zde celá řada problémů.</p>
+
+<p>V březnu 2005 <a href="http://wiki.mozilla.org/XUL:Installation_Story" title="Mozilla Wiki: XUL:Installation Story" hreflang="en">přišel Benjamin Smedberg s vizí</a>, jak uvedené problémy vyřešit a fakticky tak vznikl XULRunner. XULRunner není nic jiného než běhové prostředí (runtime), který zapouzdřuje platformu Mozilla a umožňuje nad ní stavět aplikace. XULRunner si lze též představit jako JRE či Microsoft .NET. Zkrátka takový "framework" pro chod aplikací Mozilla, který je sdílený. XULRunner je v současné době ve vývoji, ale již nad ním běží aplikace jako Songbird či IRC klient ChatZilla. První aplikací Mozilla Corporation/Foundation, kteří XULRunner vyvíjí, se stane (měl stát?) Firefox 3.0. Ten by se zároveň stal formou distribuce XULRunneru, i když ten by byl k dispozici i samostatně.</p>
+
+<p>Celý poprask poslední doby se točí okolo vyjádření Mozilla Corporation, že XULRunner, pokud se do Firefoxu 3.0 stihne začlenit, bude "soukromý". To znamená, že si jej ponese Firefox a ostatní aplikace jej nebudou moci využívat. Jednoduše řečeno, každá aplikace, která bude postavena na XULRunneru si s sebou ponese vlastní instalaci XULRunneru (v zásadě tedy stav, jaký je dnes), což je tak trochu proti původní idee. <a href="http://weblogs.mozillazine.org/mitchell" title="Mitchell Bakerová: Domovská stránka" hreflang="en">Mitchell Bakerová</a>, prezidentka Mozilla Corporation, na toto téma sepsala <a href="http://weblogs.mozillazine.org/mitchell/archives/2007/05/application_vs_platform_focus.html" title="mitchell's blog: Application vs. Platform Focus" hreflang="en">dva</a> <a href="http://weblogs.mozillazine.org/mitchell/archives/2007/05/xul_and_xulrunner_investment.html" title="mitchell's blog: XUL and XULRunner investment" hreflang="en">příspěvky</a>, které nebyly zrovna dobře napsány a vyvolaly dojem, že se Mozilla Corporation/Foundation chce zaměřit pouze na Firefox a XULRunner pouští tzv. k ledu.</p>
+
+<p>Kromě výše uvedené "privátní" instalace XULRunneru ve Firefoxu 3.0 bylo též uvedeno, že XULRunner 1.9 nebude možná vůbec oficiálně vydán. To pochopitelně vzbudilo velké pozdvižení u řady vývojářů, kteří na XULRunneru již dnes staví. Po řadě místy až emocionálních příspěvků <a href="http://benjamin.smedbergs.us/blog/2007-05-15/xulrunner-what-we-are-doing/" title="XULRunner: What we are doing" hreflang="en">přišlo vyjádření Benjamina Smedberga</a>, který XULRunner zastřešuje. Ve svém příspěvku konstatuje, že vývoj XULRunneru bude pokračovat. Pokud bude součástí Firefoxu 3.0, bude též vydána samostatná verze XULRunneru. V opačném případě rád přijme soukromé verze od přispěvatelů obdobně, jako je tomu nyní u XULRunneru 1.8.1. Tím se usnadní vývoj nad XULRunnerem pro řadu vývojářů.</p>
+
+<p>Při té příležitosti <a href="http://cs.wikipedia.org/wiki/Daniel_Glazman" title="Česká Wikipedie: Daniel Glazman">Daniel Glazman</a>, autor editor NVU, <a href="http://glazman.org/weblog/dotclear/index.php?2007/05/16/3555-xulrunner" title="Glazblog: Xulrunner" hreflang="en">prohlásil</a>, že by uvítal větší zviditělnění XULRunneru v podobě nějaké stránky, loga apod. Pozitivem uvedených diskusí je též vznik uskupení <a href="http://www.mozpad.org/doku.php" title="Mozpad: Domovská stránka" hreflang="en">Mozpad</a>, které zastřešuje lidi a organizace, které staví na platformě Mozilla. Jejich snahou je podpora platformy Mozilla do budoucna.</p>
+
+<p><strong>Další odkazy:</strong></p>
+
+<ul>
+  <li><a href="http://shaver.off.net/diary/2007/05/15/calming-the-xulrunner-waters/" title="calming the XULRunner waters" hreflang="en">Calming the XULRunner waters</a></li>
+  <li><a href="http://factoryjoe.com/blog/2007/05/10/thoughts-on-mozilla/" title="Thoughts on Mozilla" hreflang="en">Thoughts on Mozilla</a></li>
+  <li><a href="http://home.kairo.at/blog/2007-05/xulrunner_mozpad_and_seamonkey" title="XULRunner, Mozpad, and SeaMonkey" hreflang="en">XULRunner, Mozpad, and SeaMonkey</a></li>
+  <li><a href="http://www.allpeers.com/blog/" title="AllPeers Blog:" hreflang="en">AllPeers Blog</a> (řada příspěvků na toto téma)</li>  
+  
+  <li><a href="http://starkravingfinkle.org/blog/2007/05/much-ado-about-xulrunner/" title="Much Ado about XULRunner" hreflang="en">Much Ado about XULRunner</a></li>
+  
+  
+  
+</ul>
+
+
+
+<p><strong>Přečtěte si také</strong>:</p>
+
+<ul>
+ <li><a href="538404-rozhovor-s-tristanem-nitotem-z-mozilla-europe.html" title="Rozhovor s Tristanem Nitotem z Mozilla Europe">Rozhovor s Tristanem Nitotem z Mozilla Europe</a></li>
+ <li><a href="538217-jake-jazykove-verze-firefoxu-se-nejvice-stahuji.html" title="Jaké jazykové verze Firefoxu se nejvíce stahují">Jaké jazykové verze Firefoxu se nejvíce stahují</a></li>
+</ul>
+
+
+
+
+<div class="post-footer">
+ <div class="post-sign">Přidáno: 19. května 2007 00:08,
+ <a href="538290-diskuse-nad-budoucnosti-xulrunneru.html#view-comments" title="Zobrazit komentáře">Komentáře (9)</a>,
+ <a href="538290-diskuse-nad-budoucnosti-xulrunneru.html" title="Trvalý odkaz">Trvalý odkaz</a></div><div class="post-navig">
+ <a href="#top" title="Přesun na horní část stránky">nahoru</a></div>
+</div>
+
+
+
+<p> <a href="http://linkuj.cz/?id=linkuj&amp;url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F538290-diskuse-nad-budoucnosti-xulrunneru.php&amp;title=Diskuse+nad+budoucnost%C3%AD+XULRunneru"><img src="../linkuj.cz/img/badge.png" style="border:0" title="Linkuj si !" alt="Linkuj si !" /></a> <a href="http://vybrali.sme.sk/submit.php?url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F538290-diskuse-nad-budoucnosti-xulrunneru.php"><img src="../blog.sme.sk/blog/3/61630/tlacitko.gif" style="border:0" title="asdf.sk" alt="asdf.sk" /></a></p>
+
+<h3 id="view-comments" class="comments">Komentáře</h3>
+
+
+<p>
+<span class="com-blue" id="cmt_1">1</span>. <strong>DJ.Maca</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.deep-jungle.eu" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Mno, sice to neni dotaz primo ohledne XULRunner, ale existuje nejaka moznost pouzivat XUL pod .NETem? Kdysi jsem cetl o XUL# nebo tak neco, a nejak se po nem slehla zem.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_2">2</span>. <strong>JasnaPaka</strong>
+(<a href="index.html" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_1">[1]</a> Tak o XUL# jsem nikdy neslyšel. Nebyl by nějaký link?
+</p>
+
+<p>
+<span class="com-blue" id="cmt_3">3</span>. <strong>funTomas</strong>
+
+
+<br />
+DJ.Maca: O takové možnosti jsem nikdy neslyšel, ale existuje alternativa (konkurence?) XAML [zaml], vytvořená v Redmondu právě pro běh na frameworku .NET.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_4">4</span>. <strong>DJ.Maca</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.deep-jungle.eu" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+JasnaPaka: <a href="http://sourceforge.net/projects/xulsharp/" rel="nofollow">http://sourceforge.net/projects/xulsharp/</a><br /><a href="http://www.xulsharp.com/" rel="nofollow">http://www.xulsharp.com/</a><br /><br />funTomas: Ehm, mam vzdy rad takove komentare. Ptal jsem se na XUL ne na XAML. XAML znam, ale na to se ted neptam..
+</p>
+
+<p>
+<span class="com-blue" id="cmt_5">5</span>. <strong>DJ.Maca</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.deep-jungle.eu" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+JasnaPaka: Jak jsem rikal, nejak to umrelo. Jen by me zajimalo, zda-li bych mohl pouzivat XULRunner (pro GUI) a zbytek delat v C# pod .NET/Mono
+</p>
+
+<p>
+<span class="com-blue" id="cmt_6">6</span>. <strong>JasnaPaka</strong>
+(<a href="index.html" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_5">[5]</a> Podle mě to v současné době není možné, ale ber to jako pohled laika.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_7">7</span>. <strong>v6ak</strong>
+
+
+<br />
+<a href="#cmt_1">[1]</a> Asi by to šlo, z XUL lze volat aplikace (nebo spíš z privilegovaného JS), ale bylo by to IMHO trochu složité.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_8">8</span>. <strong>DJ.Maca</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.deep-jungle.eu" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+v6ak: ehm, ja nechci ze XULu volat nejake aplikace. Ja chci mit XUL jako GUI nadstavbu. Proste nepouziji Windows Forms pod .NETem, pod Monem nebudu pouzivat Gtk# ci Glade#, ale XUL na GUI. O to mi jde.<br /><br />JasnaPaka: No, neco totiz Miguel de Icaza mluvil o podpore XULRunneru v Mono. Ale dal o tom nejak moc nevim.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_9">9</span>. <strong>v6ak</strong>
+
+
+<br />
+<a href="#cmt_8">[8]</a> Já jsem to myslel tak, že aplikace pro XULRunner spustí jádro aplikace (třeba v C#) a bude s ním nějak komunikovat...
+</p>
+
+
+
+
+<h3 class="comments">Přidat komentář</h3> 
+<p>K tomuto příspěvku není možné přidávat další komentáře.</p>
+
+
+
+
+
+</div>
+
+
+
+
+<p id="footer" class="vcard">
+&copy; 2005-2009 <span class="fn">Pavel Cvrček</span> (<span class="fn nickname">JasnaPaka</span>), e-mail: <a href="mailto:jasnapaka@jasnapaka.com" title="Napsat e-mail" class="fn email">jasnapaka@jasnapaka.com</a>, <a href="rss.xml"
+title="RSS příspěvků">RSS</a>. 
+</p>
+
+</div> <!-- posts --> 
+</div> <!-- contents -->
+
+<div id="clear">&nbsp;</div>
+
+</div> <!-- page -->
+
+<script src="../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-263132-1";
+urchinTracker();
+</script>
+
+</body>
+
+<!-- Mirrored from jasnapaka.bloguje.cz/538290-diskuse-nad-budoucnosti-xulrunneru.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:32:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+</html>
+

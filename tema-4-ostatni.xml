@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<rss version="2.0">
+<channel>
+<title>JasnaPaka Blog - Ostatní</title>
+<link>http://jasnapaka.bloguje.cz/tema-4-ostatni.php</link>
+<description>Mozilla, Firefox, Thunderbird, novinky, tipy, rady...</description>
+<language>cs</language>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>www.bloguje.cz</generator>
+<ttl>120</ttl>
+<lastBuildDate>Wed, 10 Feb 2010 23:46:15 +0100</lastBuildDate>
+<pubDate>Wed, 10 Feb 2010 23:46:15 +0100</pubDate>
+<image>
+<url>http://jasnapaka.bloguje.cz/blogavatar.png</url>
+<width>80</width>
+<height>80</height>
+<title>JasnaPaka Blog</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+</image>
+<item>
+<title>Java 6 Update 10 a nový plugin pro webové prohlížeče</title>
+<link>http://jasnapaka.bloguje.cz/733100-java-6-update-10-a-novy-plugin-pro-webove-prohlizece.php</link>
+<description>Společnost Sun uvolnila novou aktualizaci Javy 6 s označením Update 10. Zajímavostí této verze je zcela nový zásuvný modul (plugin) pro webové prohlížeče Firefox 3 a Internet Explorer. Mezi jeho hlavní novinky patří oddělení chování zásuvného modulu od webového prohlížeče, takže pokud dojde k pádu zásuvného modulu, nespadne spolu s ním webový prohlížeč. Podle rok staré zprávy o příčinách pádů Firefoxu mohla tehdy Java za necelých 10 % pádů prohlížeče.</description>
+<pubDate>Thu, 23 Oct 2008 22:13:00 +0200</pubDate>
+</item>
+<item>
+<title>Arora, zajímavý webový prohlížeč postavený na WebKitu</title>
+<link>http://jasnapaka.bloguje.cz/727744-arora-zajimavy-webovy-prohlizec-postaveny-na-webkitu.php</link>
+<description>S webovými prohlížeči postavenými na renderovacím jádře WebKit se v poslední době roztrhl pytel. Webový prohlížeč Safari je pro Windows k dispozici již nějaký ten pátek, začátkem září vyšla první verze Google Chrome, která na WebKitu taktéž staví a hned několik projektů se snaží přinést WebKit pro Linux. Dnes jsem shodou okolností zaregistroval zajímavý webový prohlížeč Arora.</description>
+<pubDate>Fri, 03 Oct 2008 22:53:00 +0200</pubDate>
+</item>
+</channel></rss>

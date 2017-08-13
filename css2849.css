@@ -1,0 +1,377 @@
+a {
+	color: #0001A8;
+	background-color: inherit;
+}
+
+a:hover, a:visited {
+	color : #BB2222;
+	background-color: inherit;
+}
+
+body {
+	font-family: Verdana, "Geneva CE", lucida, sans-serif;
+	font-size: 12px;
+	background-color : #E0E0E0;
+	color : Black;
+	margin: 10px 0 10px 0;
+	padding: 0 0 0 0;
+	/* IE 5.5 "hack" */
+	text-align : center;	
+}
+
+h1, #caption {
+	font-size : 29px;
+	margin: 10px 0 0 10px;
+       font-weight: bold;
+}
+
+h2 {
+	font-size : 18px;
+	margin : 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+h3 {
+	font-size : 15px;
+	margin : 10px 0 8px 0;
+}
+
+hr {
+	border : 1px solid #DE5252;
+	margin : 0 0 0 0;
+	padding : 0 0 0 0;
+}
+
+img {
+       border: 0;
+}
+
+ul {
+	font-size : 13px;
+	margin : 5px 0px 15px 18px;
+	padding-left: 0px;
+}
+
+p {
+	margin : 16px 0 16px 0;
+}
+
+table.nice {
+	border: 1px solid Silver;
+	border-spacing:0;
+	border-collapse:collapse;
+        margin-bottom: 10px;
+}
+
+table.nice > td {
+	vertical-align: top;
+	border: 1px solid #D0D0D0;
+	padding: 1px 5px 1px 2px;
+}
+
+table.nice > thead {
+	font-weight: bold;
+	background-color: #F4A460;
+	color: White;
+}
+
+
+.com-blue {
+  color: #0001A8;
+}
+
+.caption {
+	margin-bottom : 0px;
+}
+
+.codear {
+	background-color: #FFF1DF;
+	border: 1px solid #FFCF99;
+	padding: 5px 5px 5px 5px;
+	color: Black;
+}
+
+.comment-author {
+	
+}
+
+.comment-left {
+	float: left;
+	width: 70px;
+}
+
+.comment-input {
+	margin-left: 75px;
+}
+
+.comment-message {
+	
+}
+
+.comments {
+	margin : 20px 0 10px 0;
+	border-bottom: 1px solid #DE5252;
+	width: 250px;
+}
+
+.input-text {
+	width : 200px;
+}
+
+.input-area {
+	width : 400px;
+	height: 100px;
+}
+
+.menu-topic {
+	font-size : 13px;
+}
+
+.nabidka {
+	background-color: #FBEFE7;
+	padding: 0 1px 0 1px;
+	border: 1px solid #EBC7C7;
+	color: Black;
+}
+
+.post {
+	margin : 0 0 0 0;
+	padding : 0 0 20px 0;
+	font-size : 13px;
+}
+
+.post-caption {
+	font-size : 18px;
+	margin : 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.post-footer {
+	background-color : #EFEFEF;
+	color : Black;
+	width : 100%;
+	font-size : 11px;
+	padding: 2px;
+}
+
+.post-navig {
+	margin-left: 550px;	
+}
+
+.post-obr-right {
+  float:right;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+}
+
+.post-sign {
+	float: left;
+}
+
+.rel-date{
+	margin: 0;
+	padding: 0;
+}
+
+.rel-ram {
+	border: 1px solid Silver;
+	padding: 5px;
+	margin: 5px 0 5px 0;
+        margin-bottom: 15px;
+}
+
+
+.rss-pic {	
+	border: 0;
+}
+
+.soubor {
+	background-color: #D9E6F2;
+	border: 1px solid #BED3E4;
+	padding: 0 1px 0 1px;
+	color: Black;
+}
+
+.vstup {
+       width: 250px;
+}
+
+#clear {
+        clear:both;
+        height:0;
+}
+
+#comments-desc {
+	background-color: #F4F4F4;
+	border: 1px solid Black;
+	padding: 5px;
+}
+
+#contents {
+	padding : 8px 12px 0px 12px;
+}
+
+#footer {
+	font-size : 10px;
+	text-align : center; 
+	border-top : 1px solid #C7C7C7;
+	padding-top : 3px;
+	margin : 10px 0 5px 0;
+}
+
+#form-submit {
+	padding : 15px 0 0 0;
+}
+
+#header {
+	padding-bottom: 5px;
+}
+
+#heading {
+	color : Black;
+	text-decoration : none;
+	background-color : White;	
+}
+
+#heading:hover {
+	text-decoration : underline;
+}
+
+#hide {
+	display : none;
+}
+
+#rmenu {
+	width: 180px;
+	margin:0; padding:0;
+	float: right;
+}
+
+#lmenu {
+	float: left;
+	width: 130px;
+	margin:0; padding:0;
+}
+
+#navigation {
+	text-align: right;
+	font-size: 10px;
+	margin-top: 30px;
+}
+
+#page { 
+	background-color : White;
+	color : Black;
+	border : 1px solid #ACACAC;
+	text-align: left;
+	margin : 10px auto 10px auto;
+	width: 950px;
+	min-height: 500px;
+}
+#posts {
+	padding: 0;
+	margin:0 130px;
+	width: 595px;
+}
+
+#rel-info {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+        line-height: normal;
+}
+
+#rss-pos {
+	margin : 0 0 10px 0;
+}
+
+#subheading {
+	font-size : 14px;
+	font-style : italic;
+	margin : 0 0 0 25px;
+}
+
+#tips-summary {
+  border: 1px solid #CD5C5C;
+}
+
+/*** konstrukce pouze pro moderni prohlizece - no IE ***/
+
+/* Odkazovani na weby v jinem jazyce */
+a[hreflang]	{
+	padding-right: 12px;
+	background: transparent none no-repeat 100% 0%	
+}
+
+a[hreflang=en]	{
+	background-image:url("en.gif")
+}
+
+/* Doplnovani ikonek k odkazum urciteho typu */
+a[href$="pdf"] {
+   padding-right:18px;
+   background: transparent url(\\\'pdf.gif\\\') no-repeat top right;
+}
+a[href$="zip"] {
+   padding-right:18px;
+   background: transparent url(\\\'zip.gif\\\') no-repeat top right;
+}
+a[href$="doc"] {
+   padding-right:18px;
+   background: transparent url(\\\'doc.gif\\\') no-repeat top right;
+}
+
+
+/***** veci pro tisk ******/
+
+@media print {
+	
+#lmenu, #rmenu {
+	display: none;
+}	
+
+#blog-caption {
+  width: auto;
+}
+
+#blog-search {
+  display: none;
+}
+
+#posts {
+	margin: 5px;
+        width: auto;
+}
+
+#pridat-komentar {
+    display:none;
+}
+
+}
+
+/* Vìci související s  */
+#sekce-nadpis {
+	font-size : 20px; 
+  color: rgb(153,0,0);
+	margin : 0;
+	padding: 0;
+} 
+
+.under {
+  border-bottom: 1px solid Black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+table.nice th * {
+  vertical-align: middle;
+}
+
+#minimenu {
+	float: right;
+	background-color: #F3F3F3;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid Black;
+}

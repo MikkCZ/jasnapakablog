@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+
+<!-- Mirrored from jasnapaka.bloguje.cz/675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:29:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+<head><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS - Mozilla" href="tema-2-mozilla.xml" /><link rel="alternate" type="application/rss+xml" title="Komentáře" href="comments.xml" /> 
+ <meta http-equiv="content-language" content="cs" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> 
+ <meta name="robots" content="all,follow" />
+ <meta name="author" content="Pavel Cvrček [JasnaPaka], mailto:jasnapaka@jasnapaka.com" />
+ <meta name="copyright" content="Pavel Cvrček" />
+ <meta name="keywords" content="Firefox, Thunderbird, Mozilla, Sunbird, SeaMonkey" />
+ <meta name="description" content="Aktuální novinky o Firefoxu, Thunderbirdu a dalších aplikacích Mozilla. Užitečné návody, tipy a rady." />
+
+ 
+ <title>Jak je to s rychlostí JavaScriptu ve Firefoxu 3.0 - JasnaPaka Blog</title>
+ 
+ <link type="text/css" rel="stylesheet" href="css2849.css" title="Základní styl" />
+ <link rel="search" type="application/opensearchdescription+xml" title="JasnaPaka Blog" href="osd.xml" />
+ <link rel="shortcut icon" href="favicon.ico" />
+ <link rel="alternate" type="application/atom+xml" title="ATOM" href="atom.xml" />
+</head>
+<body>
+<!-- (C)2000-2008 Gemius SA - gemiusAudience / bloguje.cz / Bloguje -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = new String('..hK6LR3j7Y7SsSlu.85f2a0HZFNLuLMgs6aWr23goz.O7');
+//--><!]]>
+</script>
+<script type="text/javascript" src="../static.bloguje.cz.s3.amazonaws.com/xgemius.js"></script>
+
+
+<script type="text/javascript">
+<!--
+
+function addSearchEngine() {
+ if ((window.external) && (typeof window.external.addSearchEngine == "function")) {
+ window.external.addSearchEngine ("osd.xml", 
+ "favicon.png", "JasnaPaka Blog", "JasnaPaka Blog");
+ }
+ else {
+ alert("Váš prohlížeč bohužel nepodporuje vyhledávací moduly ve formátu OpenSearch.\nTy podporuje Mozilla Firefox 2.0 a Internet Explorer 7.0. Případně jejich novější verze.");
+ }
+}
+
+//-->
+</script>
+
+<div><span id="top" /></div>
+<p id="hide">
+ <a href="#posts">Přeskočit navigaci</a>
+</p>
+
+<div id="page">
+<div style="padding: 10px 0 10px 10px;margin:10px; border: 2px solid #1F4363;margin: 0 0 15px 0;background-color: #F0F6F9;">
+ Tento blog byl již <strong>ukončen</strong>. Aktuální novinky ze světa Mozilly nyní hledejte na webu <a href="http://www.mozilla.cz/" title="Mozilla.cz: Mozilla v České republice">Mozilla.cz</a>.
+</div>
+
+ <div id="header">
+ <table style="border:0"><tr><td id="blog-caption" style="border:0; width: 700px">
+
+ 
+ <div id="caption"><a href="index.html" title="Dění okolo Firefoxu, Thunderbirdu, Mozilly ..." id="heading">JasnaPaka Blog</a></div>
+
+
+ <p id="subheading">Firefox, Thunderbird, Mozilla, novinky, tipy, rady...</p> </td>
+ <td id="blog-search">
+
+<!-- Google CSE Search Box Begins -->
+ <form id="searchbox_006927761123917035100:l49kun9lnne" action="http://www.google.com/cse">
+ <div>
+ <input type="hidden" name="cx" value="006927761123917035100:l49kun9lnne" />
+ <input type="hidden" name="cof" value="FORID:0" />
+ <input type="hidden" name="ie" value="iso-8859-2" />
+ <input name="q" type="text" size="20" />
+ <input type="submit" name="sa" value="Vyhledat" />
+ </div>
+ </form>
+<!-- Google CSE Search Box Ends -->
+ 
+ </td>
+ </tr></table> 
+ </div>
+ 
+ <div id="contents">
+ <div id="lmenu">
+ <div class="menu-topic"><strong>NAVIGACE</strong></div>
+ <ul>
+ <li><a href="http://www.mozilla.cz/" title="Dění okolo Firefoxu, Thunderbirdu ...">Novinky</a></li>
+ <li><a href="http://www.mozilla.cz/produkty/firefox/" title="Pár slov o Firefoxu">O Firefoxu</a></li>
+ <li><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k Firefoxu a Thunderbirdu">Návody</a></li>
+ <li><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Stáhnout</a></li>
+ </ul> 
+ 
+ <div id="rss-pos">
+ <a href="rss.xml" title="RSS příspěvků"><img src="rss.png" alt="RSS" width="16" height="16" class="rss-pic" /></a> 
+ <a href="javascript:addSearchEngine()" title="Přidat vyhledávací modul"><img src="opensearch.png" alt="Vyhledávací modul" width="16" height="16" class="rss-pic" /></a>
+ </div>
+
+ <div class="menu-topic"><strong>ARCHIV</strong></div>
+ 
+ <ul>
+ <li><a href="0909archiv.html">září 2009</a></li><li><a href="0908archiv.html">srpen 2009</a></li><li><a href="0907archiv.html">červenec 2009</a></li><li><a href="0906archiv.html">červen 2009</a></li><li><a href="0905archiv.html">květen 2009</a></li><li><a href="0904archiv.html">duben 2009</a></li><li><a href="0903archiv.html">březen 2009</a></li><li><a href="0902archiv.html">únor 2009</a></li><li><a href="0901archiv.html">leden 2009</a></li><li><a href="0812archiv.html">prosinec 2008</a></li><li><a href="0811archiv.html">listopad 2008</a></li><li><a href="0810archiv.html">říjen 2008</a></li><li><a href="0809archiv.html">září 2008</a></li><li><a href="0808archiv.html">srpen 2008</a></li><li><a href="0807archiv.html">červenec 2008</a></li><li><a href="0806archiv.html">červen 2008</a></li><li><a href="0805archiv.html">květen 2008</a></li><li><a href="0804archiv.html">duben 2008</a></li><li><a href="0803archiv.html">březen 2008</a></li><li><a href="0802archiv.html">únor 2008</a></li><li><a href="0801archiv.html">leden 2008</a></li><li><a href="0712archiv.html">prosinec 2007</a></li><li><a href="0711archiv.html">listopad 2007</a></li><li><a href="0710archiv.html">říjen 2007</a></li><li><a href="0709archiv.html">září 2007</a></li><li><a href="0708archiv.html">srpen 2007</a></li><li><a href="0707archiv.html">červenec 2007</a></li><li><a href="0706archiv.html">červen 2007</a></li><li><a href="0705archiv.html">květen 2007</a></li><li><a href="0704archiv.html">duben 2007</a></li><li><a href="0703archiv.html">březen 2007</a></li><li><a href="0702archiv.html">únor 2007</a></li><li><a href="0701archiv.html">leden 2007</a></li><li><a href="0612archiv.html">prosinec 2006</a></li><li><a href="0611archiv.html">listopad 2006</a></li><li><a href="0610archiv.html">říjen 2006</a></li><li><a href="0609archiv.html">září 2006</a></li><li><a href="0608archiv.html">srpen 2006</a></li><li><a href="0607archiv.html">červenec 2006</a></li><li><a href="0606archiv.html">červen 2006</a></li><li><a href="0605archiv.html">květen 2006</a></li><li><a href="0604archiv.html">duben 2006</a></li><li><a href="0603archiv.html">březen 2006</a></li><li><a href="0602archiv.html">únor 2006</a></li><li><a href="0601archiv.html">leden 2006</a></li><li><a href="0512archiv.html">prosinec 2005</a></li><li><a href="0511archiv.html">listopad 2005</a></li><li><a href="0510archiv.html">říjen 2005</a></li><li><a href="0509archiv.html">září 2005</a></li><li><a href="0508archiv.html">srpen 2005</a></li>
+ </ul>
+
+ <div>
+ <div style="margin-top:5px"><a href="http://www.softeu.cz/"><img src="img/softeu-icon.png" alt="Ikona SoftEU" /></a></div>
+
+ <div style="margin-top:5px"><a href="http://www.bloguje.cz/"><img src="../www.bloguje.cz/bloguje.png" alt="bloguje.cz" /></a></div>
+
+
+ </div>
+ </div>
+
+<div id="rmenu">
+
+<div class="menu-topic"><strong>NÁVODY A TIPY</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla"><img src="img/help-64.png" alt="Návody a tipy" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/" title="Návody a tipy k aplikacím Mozilla">Řešení problémů<br />Návody, jak ...<br />Triky</a>
+</td></tr></table>
+</div>
+
+
+<div class="menu-topic"><strong>PODPORA K FIREFOXU</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu"><img src="img/sumo-logo.png" alt="Česká podpora k Firefoxu" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/podpora/firefox/" title="Česká podpora k Firefoxu">Česká<br />podpora<br />k Firefoxu</a>
+</td></tr></table>
+</div>
+
+<div class="menu-topic"><strong>STÁHNOUT</strong></div>
+<div class="rel-ram">
+ <table border="0"><tr>
+ <td><a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird..."><img src="img/download-icon.png" alt="Download" /></a></td>
+ <td>
+<a href="http://www.mozilla.cz/stahnout/" title="Stáhnout Firefox, Thunderbird...">Firefox<br />Thunderbird<br />a další...</a>
+</td></tr></table>
+</div>
+
+</div>
+
+
+ <div id="posts">
+ 
+
+ <div class="post">
+
+
+<h1 class="post-caption">Jak je to s rychlostí JavaScriptu ve Firefoxu 3.0</h1>
+
+<span class="post-obr-right"><img src="img/firefox-logo.png" alt="Logo Firefoxu" /></span>
+
+<p>Na mnoha místech se již hovořilo o tom, že Firefox 3.0 je oproti svému předchůdci výrazně rychlejší. To se týká jak samotného prostředí prohlížeče, tak rychlosti vykreslování webových stránek. Hezky se to ukazuje na testu rychlosti JavaScriptu, který je pro Firefox dvojnásobně důležitý. Jednak se vyskytuje hojně na webu a prakticky žádná webová aplikace se bez něj neobejde, druhak je pak základem části Firefoxu samotného. Konkrétně velká část kódu skrytá za grafickým rozhraním je v něm napsána. Zrychlení JavaScriptu tak uživatel může poznat hned na dvou frontách.</p>
+
+<p>Rozhodl jsem se, že si udělám praktický test rychlosti JavaScriptu ve Firefoxu. K němu mi posloužil <a href="http://webkit.org/perf/sunspider-0.9/sunspider.html" title="SunSpider JavaScript Benchmark" lang="en">SunSpider JavaScript Benchmark</a> od tvůrců WebKitu, který má dle jejich slov vypovídací hodnotu vzhledem k dnešnímu použití JavaScriptu v reálných webových aplikacích. Nakolik tomu tak ve skutečnosti je, nedokáži odhadnout, ale nic lepšího k otestování dnes pravděpodobně není. V rámci testování jsem nejprve otestoval aktuální stabilní verzi Firefoxu tj. verzi 2.0.0.13, a poté vyzkoušel postupně všechny betaverze Firefoxu 3.0. Na výsledky se můžete podívat v následujícím grafu a tabulce (menší hodnota znamená lepší výsledek).</p>
+
+<p><img src="../www.jasnapaka.com/images/blog/ff-3.0-javascript.png" alt="Výsledky testu SunSpider ve Firefoxu" /></p>
+
+<table border="1" class="nice">
+<thead>
+<tr>
+  <td width="200"><strong>Verze</strong></td>
+  <td><strong>Výsledná hodnota</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Firefox 2.0.0.13</td>
+  <td>17095,6 ms +/- 4.0%</td>
+</tr>
+<tr>
+  <td>Firefox 3.0 Beta 1</td>
+  <td>12162,2 ms +/- 1.3%</td>
+</tr>
+<tr>
+  <td>Firefox 3.0 Beta 2</td>
+  <td>12588,8 ms +/- 1.4%</td>
+</tr>
+<tr>
+  <td>Firefox 3.0 Beta 3</td>
+  <td>10059,2 ms +/- 1.1%</td>
+</tr>
+<tr>
+  <td>Firefox 3.0 Beta 4</td>
+  <td>4825,0 ms +/- 1.6%</td>
+</tr>
+<tr>
+  <td>Firefox 3.0 Beta 5</td>
+  <td>4245,4 ms +/- 1.6%</td>
+</tr>
+</tbody>
+</table>
+
+<p>Jak vidno, Firefox 3.0 oproti svému předchůdci zrychlil u JavaScriptu několikanásobně. Pokud si budete test pouštět u sebe, případně srovnávat s jinými webovými prohlížeči, pak berte v potaz, že srovnávání má význam jen tehdy, pokud jej provedete na stejné hardwarové a softwarové konfiguraci. Stejně jako u jiných testů také platí, že výsledky je nutné brát orientačně a nemají například vypovídací hodnotu o kvalitě implementace JavaScriptu.</p>
+
+
+
+
+<p><strong>Přečtěte si také</strong>:</p>
+
+<ul>
+ <li><a href="675318-sunbird-lightning-0-8-k-dispozici.html" title="Sunbird/Lightning 0.8 k dispozici">Sunbird/Lightning 0.8 k dispozici</a></li>
+ <li><a href="675195-jak-ziskat-vzhled-firefoxu-3-0-pro-visty-na-windows-xp.html" title="Jak získat vzhled Firefoxu 3.0 pro Visty na Windows XP">Jak získat vzhled Firefoxu 3.0 pro Visty na Windows XP</a></li>
+</ul>
+
+
+
+
+<div class="post-footer">
+ <div class="post-sign">Přidáno: 4. dubna 2008 23:58,
+ <a href="675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.html#view-comments" title="Zobrazit komentáře">Komentáře (13)</a>,
+ <a href="675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.html" title="Trvalý odkaz">Trvalý odkaz</a></div><div class="post-navig">
+ <a href="#top" title="Přesun na horní část stránky">nahoru</a></div>
+</div>
+
+
+
+<p> <a href="http://linkuj.cz/?id=linkuj&amp;url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.php&amp;title=Jak+je+to+s+rychlost%C3%AD+JavaScriptu+ve+Firefoxu+3.0"><img src="../linkuj.cz/img/badge.png" style="border:0" title="Linkuj si !" alt="Linkuj si !" /></a> <a href="http://vybrali.sme.sk/submit.php?url=http%3A%2F%2Fjasnapaka.bloguje.cz%2F675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.php"><img src="../blog.sme.sk/blog/3/61630/tlacitko.gif" style="border:0" title="asdf.sk" alt="asdf.sk" /></a></p>
+
+<h3 id="view-comments" class="comments">Komentáře</h3>
+
+
+<p>
+<span class="com-blue" id="cmt_1">1</span>. <strong>DiGi</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.qr.cz" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Jen pro zajímavost:<br /><br />IE7-32bit: 19165 ms<br />IE7-64bit: 16998.8 ms (snad první věc, u které je u 64bitů vidět nějaké zřetelné zlepšení)<br />Firefox 3 Beta 5 noční build: 3236.8 ms<br /><br />Moc pěkné ;-)
+</p>
+
+<p>
+<span class="com-blue" id="cmt_2">2</span>. <strong>v6ak</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fv6ak.profitux.cz%2F" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Ještě lepší je, pokud se mě prohlížeč zeptá, zda má počkat na dokončení skriptu, nebo jej ukončit... To pak nemá ten test smysl.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_3">3</span>. <strong>Martin Hassman</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fmet.blog.root.cz%2F" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Maciej někde psal, že mezi WebKitem a Geckem panoval v poslední době ve výkonosti docela slušný boj. Kdy se téměř ze dne na den měnilo, kdo je zrovna lepší. Jeden den to bylo Gecko, další zase WebKit a naopak. Ty výsledky jsou opravdu slušný.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_4">4</span>. <strong>Joelp</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fjoelp.wz.cz" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_2">[2]</a> To se stává na pomalejších strojích. Normálně se s tímto dialogem nesetkáš. Otázka ale je, jesti při zobrazení dialogového okna script pokračuje v běhu, nebo se pozastaví.<br /><br />BTW: i u FF 64bit je znát posun rychlosti:<br /><br />FF 3.0pre NB<br /> * 64bit - 3419.0 ms<br /> * 32bit - 3890.6 ms
+</p>
+
+<p>
+<span class="com-blue" id="cmt_5">5</span>. <strong>Pavel Cvrček (JasnaPaka)</strong>
+(<a href="index.html" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_3">[3]</a> WebKit je na tom podle mě v rychlosti JavaScriptu obdobně jako Gecko. Co jsem zkoušel Safari 3.1, dostal jsem podobný výsledek jako s FF 3.0 Beta 4. To by časově odpovídalo. Počítám, že vývojové verze WebKitu jsou zase dál.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_6">6</span>. <strong>pipboy</strong>
+(<a href="http://pipboy.bloguje.cz/" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+Taky vam Opera 9.27  vraci u nekterych testu cas 0.0ms?<br /><br />jinak teda jsem si taky trochu hral<br /><a href="../images.wtz.cz/images/Clipboard01dd83dd.jpg" rel="nofollow">http://images.wtz.cz...01dd83dd.jpg</a>
+</p>
+
+<p>
+<span class="com-blue" id="cmt_7">7</span>. <strong>GeBu</strong>
+
+
+<br />
+<a href="#cmt_4">[4]</a> s tímto dialogem se setkávám dost často: Mám asi 300 kontaktů v ICQ. Častěji na ně přistupuju přes jabber transport - takže i s jabberem celkem něco mezi 400 - 500 kontakty. A když otevřu jabber přes webové rozhraní (např. meebo.com), tak se mi ta hláška objevila vždy. Teď jsem to po přečtení této diskuse vyzkoušel ve FF3b5 a už tam nebyla a jede to :). Podobno go.icq.com flash verze, se kterou jsem měl taky problém.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_8">8</span>. <strong>GeBu</strong>
+
+
+<br />
+Tak jsem to zkusil ještě znovu v práci na 2.0.0.13 a taky to prošlo, ale bylo to pomalejší znatelně - chvilkama jsem měl pocit, že se to kousne.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_9">9</span>. <strong>(anonymní uživatel)</strong>
+
+
+<br />
+>2. v6ak<br />>Ještě lepší je, pokud se mě prohlížeč zeptá, zda má počkat na <br />>dokončení skriptu, nebo jej ukončit<br /><br />lahka pomoc <br /><br />ako url zadaj about:config a nastav si max. cas behu skriptu v polozke (ak budes pisat do vyberu dom.max_s tak by tam mal ostat len om)<br />dom.max_script_run_time<br /><br /><br />pocet sekund, ktore moze skript bezt bez tej hlasky...
+</p>
+
+<p>
+<span class="com-blue" id="cmt_10">10</span>. <strong>Sešívaný</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.eischmann.cz" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+S nejnovějším weekly buildem Opery jsem udělal 8500 m/s.
+</p>
+
+<p>
+<span class="com-blue" id="cmt_11">11</span>. <strong>dejv608</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fsplat.cz" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+A já zase 68540ms (!).
+</p>
+
+<p>
+<span class="com-blue" id="cmt_12">12</span>. <strong>Petr Tomeš</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fwww.phil.muni.cz%2F%7Eptomes%2F" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+10. Sešívaný:<br /><br />A k čemu je to dobré oznamovat, když to nejde s čím porovnávat? K ničemu.<br /><br /><a href="http://www.abclinuxu.cz/blog/ptomes/2008/3/rychlost-zpracovani-javascriptu-v-prohlizecich-webu" rel="nofollow">http://www.abclinuxu.cz...cich-webu</a>
+</p>
+
+<p>
+<span class="com-blue" id="cmt_13">13</span>. <strong>v6ak</strong>
+(<a href="http://www.bloguje.cz/redir2.php?r=http%3A%2F%2Fv6ak.profitux.cz%2F" title="Webová stránka autora příspěvku">www</a>)
+
+<br />
+<a href="#cmt_10">[10]</a> m/s? :-D
+</p>
+
+
+
+
+<h3 class="comments">Přidat komentář</h3> 
+<p>K tomuto příspěvku není možné přidávat další komentáře.</p>
+
+
+
+
+
+</div>
+
+
+
+
+<p id="footer" class="vcard">
+&copy; 2005-2009 <span class="fn">Pavel Cvrček</span> (<span class="fn nickname">JasnaPaka</span>), e-mail: <a href="mailto:jasnapaka@jasnapaka.com" title="Napsat e-mail" class="fn email">jasnapaka@jasnapaka.com</a>, <a href="rss.xml"
+title="RSS příspěvků">RSS</a>. 
+</p>
+
+</div> <!-- posts --> 
+</div> <!-- contents -->
+
+<div id="clear">&nbsp;</div>
+
+</div> <!-- page -->
+
+<script src="../www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-263132-1";
+urchinTracker();
+</script>
+
+</body>
+
+<!-- Mirrored from jasnapaka.bloguje.cz/675220-jak-je-to-s-rychlosti-javascriptu-ve-firefoxu-3-0.php by HTTrack Website Copier/3.x [XR&CO'2008], Thu, 11 Feb 2010 21:29:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-2"><!-- /Added by HTTrack -->
+</html>
+

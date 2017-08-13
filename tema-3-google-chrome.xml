@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<rss version="2.0">
+<channel>
+<title>JasnaPaka Blog - Google Chrome</title>
+<link>http://jasnapaka.bloguje.cz/tema-3-google-chrome.php</link>
+<description>Mozilla, Firefox, Thunderbird, novinky, tipy, rady...</description>
+<language>cs</language>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>www.bloguje.cz</generator>
+<ttl>120</ttl>
+<lastBuildDate>Wed, 10 Feb 2010 23:46:15 +0100</lastBuildDate>
+<pubDate>Wed, 10 Feb 2010 23:46:15 +0100</pubDate>
+<image>
+<url>http://jasnapaka.bloguje.cz/blogavatar.png</url>
+<width>80</width>
+<height>80</height>
+<title>JasnaPaka Blog</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+</image>
+<item>
+<title>Novinky ve vývoji Google Chrome</title>
+<link>http://jasnapaka.bloguje.cz/757341-novinky-ve-vyvoji-google-chrome.php</link>
+<description>Vývojáři webového prohlížeče Google Chrome pro nás připravili nový vývojový milník svého prohlížeče, který přináší několik nových vlastností. Hned tou první je podpora historie ve formulářových polích na webových stránkách. Funkci, kterou řada uživatelů považuje za samozřejmost, Google Chrome dosud neměl. Prozatím nefunguje vše úplně korektně (např. nejde vymazat konkrétní položku historie), ale to se jistě do finální verze dořeší....</description>
+<pubDate>Fri, 09 Jan 2009 23:12:00 +0100</pubDate>
+</item>
+<item>
+<title>Google Chrome a otevření okna v novém profilu</title>
+<link>http://jasnapaka.bloguje.cz/755692-google-chrome-a-otevreni-okna-v-novem-profilu.php</link>
+<description>Pokud si stáhnete aktuální vývojovou verzi Google Chrome (resp. Chromium), můžete si v hlavní nabídce všimnout nové volby New window in profile. Jak již pojmenování funkce napovídá, umožňuje tato volba otevřít nové okno Google Chrome v jiném uživatelském profilu, případně nový profil rovnou vytvořit. Uvedenou funkci bude možné využít na běh webových aplikací, kdy každá poběží v samostatném prostoru (vlastní cookies, hesla apod.) obdobně, jako to má například Mozilla Prism.</description>
+<pubDate>Sat, 03 Jan 2009 23:52:00 +0100</pubDate>
+</item>
+<item>
+<title>Google Chrome v nové verzi</title>
+<link>http://jasnapaka.bloguje.cz/736041-google-chrome-v-nove-verzi.php</link>
+<description>Webový prohlížeč Google Chrome byl včera v tichosti uvolněn v nové verzi. Ta nese označení 0.3.154.9 a mezi hlavními novinkami je uvedeno vylepšení stability zásuvných modulů, které s předchozí verzi nepracovaly vždy korektně. Došlo též k drobnému přeskupení nabídky, kdy byly přesunuty volby pro otevření nového panelu či nové stránky. Nová verze též přináší několik bezpečnostních oprav a osobně mě asi nejvíce potěšilo, že funkce na uložení stránky má konečně klávesovou zkratku</description>
+<pubDate>Thu, 30 Oct 2008 21:20:00 +0100</pubDate>
+</item>
+<item>
+<title>Google Chrome a přehled parametrů příkazové řádky</title>
+<link>http://jasnapaka.bloguje.cz/728712-google-chrome-a-prehled-parametru-prikazove-radky.php</link>
+<description>Obdobně jako Firefox a řada dalších aplikací podporuje webový prohlížeč Google Chrome různé parametry spuštění, kterými můžete přizpůsobit jeho chování. Jejich přehled přináší Martin Hassman v článku na nově vzniklém webu Zdroják.cz, který se zabývá webovými technologiemi.</description>
+<pubDate>Tue, 07 Oct 2008 21:18:00 +0200</pubDate>
+</item>
+<item>
+<title>Google Chrome Portable</title>
+<link>http://jasnapaka.bloguje.cz/728106-google-chrome-portable.php</link>
+<description>Webový prohlížeč Google Chrome je tu s námi již nějaký ten pátek. Pokud jste se stali jeho uživateli a rádi byste jej s sebou nosili na přenosném médiu, můžete vyzkoušet jeho přenosnou verzi, která se nemusí instalovat. Nutno podotknout, že se nejedná o oficiální verzi, ale drobně upravenou verzi jednoho nadšence, který si zkompiloval zdrojové kódy projektu Chromium, což je projekt zajišťující vývoj Google Chrome.</description>
+<pubDate>Sun, 05 Oct 2008 18:07:00 +0200</pubDate>
+</item>
+<item>
+<title>Kam Google Chrome ukládá uživatelská data</title>
+<link>http://jasnapaka.bloguje.cz/727974-kam-google-chrome-uklada-uzivatelska-data.php</link>
+<description>Pokud si budete chtít zazálohovat záložky, historii a další data z Google Chrome, začnete řešit, kam si je Google Chrome vlastně ukládá. Obdobně jako u Firefoxu je naleznete ve složce Data Aplikací. Ve Windows XP jsou uživatelská data uložena v cestě C:\\Document and Settings\\[uživatel]\\Data Aplikací\\Google\\Chrome\\User Data, ve Windows Vista je naleznete v cestě C:\\Users\\[uživatel]\\AppData\\Local\\Google\\Chrome\\User Data</description>
+<pubDate>Sun, 05 Oct 2008 00:33:00 +0200</pubDate>
+</item>
+<item>
+<title>Podíl Google Chrome klesá?</title>
+<link>http://jasnapaka.bloguje.cz/724929-podil-google-chrome-klesa.php</link>
+<description>ComputerWorld přinesl článek shrnující vývoj tržního podílu webového prohlížeče Google Chrome. V článku se mimo jiné můžete dočíst vyjádření zástupce společnosti Net Applications, která měří tržní podíl webových prohlížečů v USA. Ten tvrdí, že Google Chrome je v současné době spíše na ústupu a uživatelé se pomalu vrací k Firefoxu a Internet Exploreru. Osobně bych podle průběžných statistik spíše řekl, že stav je v posledních 14 dnech přibližně konstantní.</description>
+<pubDate>Tue, 23 Sep 2008 22:43:00 +0200</pubDate>
+</item>
+<item>
+<title>Jak je to s licencí Google Chrome</title>
+<link>http://jasnapaka.bloguje.cz/721592-jak-je-to-s-licenci-google-chrome.php</link>
+<description>V souvislosti s webovým prohlížečem Google Chrome se často objevovaly diskuse okolo jeho licence. Asi nejčastěji byl zmiňován problém s licenčním ujednáním k prohlížeči, který v některých bodech dával společnosti Google docela silná práva k vámi vytvořenému obsahu. Společnost Google později uvedla, že tyto pasáže se dostaly do licence omylem a došlo k nápravě</description>
+<pubDate>Thu, 11 Sep 2008 00:00:00 +0200</pubDate>
+</item>
+<item>
+<title>Kde se zapojit do vývoje Google Chrome</title>
+<link>http://jasnapaka.bloguje.cz/721283-kde-se-zapojit-do-vyvoje-google-chrome.php</link>
+<description>Na mnoha místech bylo zmiňováno, že Google Chrome je otevřený projekt. Jedná se o webový prohlížeč, ke kterému jsou volně k dispozici zdrojové kódy pod BSD licencí. Celý projekt zastřešující vývoj se jmenuje Chromium a v rámci něj můžete diskutovat s vývojáři v rámci diskusních skupin, hlásit nalezené chyby či přispívat vlastním kódem. Jak už to u podobných projektů bývá, jsou k dispozici též vývojové verze i návod, jak se zapojit.</description>
+<pubDate>Tue, 09 Sep 2008 23:05:00 +0200</pubDate>
+</item>
+</channel></rss>

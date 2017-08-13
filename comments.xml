@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<?xml-stylesheet type="text/css" href="http://www.bloguje.cz/rss-styl-c.css"?>
+<rss version="2.0">
+<channel>
+<title>JasnaPaka Blog - komentáře</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+<description>Mozilla, Firefox, Thunderbird, novinky, tipy, rady...</description>
+<language>cs</language>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>www.bloguje.cz</generator>
+<lastBuildDate>Wed, 10 Feb 2010 23:46:15 +0100</lastBuildDate>
+<pubDate>Wed, 10 Feb 2010 23:46:15 +0100</pubDate>
+<image>
+<url>http://jasnapaka.bloguje.cz/blogavatar.png</url>
+<width>80</width>
+<height>80</height>
+<title>JasnaPaka Blog</title>
+<link>http://jasnapaka.bloguje.cz/</link>
+</image>
+<item>
+<author>Honzisko</author>
+<title>(Vzhled Google Chrome pro Firefox) - Vzhled mozna nahradite...</title>
+<link>http://jasnapaka.bloguje.cz/721272-vzhled-google-chrome-pro-firefox.php#cmt_5</link>
+<description>Vzhled mozna nahradite,ale vlastnosti nikoliv:)dlouhá léta sem byl věrný firefoxu ale od doby co je chrome a je dobře postaven a upraven ho používám.má sice bug v iframech ale to se dá přežít protože moc stránek již dnes iframe nevyužívá :)</description>
+<pubDate>Sat, 09 Jan 2010 18:22:59 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/721272-vzhled-google-chrome-pro-firefox.php#cmt_5</guid>
+</item>
+<item>
+<author>Rikudou_Sennin</author>
+<title>(Personas, lehké motivy vzhledu pro Firefox) - Myslím...</title>
+<link>http://jasnapaka.bloguje.cz/776892-personas-lehke-motivy-vzhledu-pro-firefox.php#cmt_6</link>
+<description>Myslím, že pokud by přidali podporu i pro ostatní vzhledy než jen defaultní, tak by to byl celkem použitelnéLíbí se mi např. personas vzhled Dark Fox, ale k tomu původnímu tématu mi nesedí. Používám vzhled BloodFire a k tomu by to Dark Fox vypadalo úplně dokonale. Snad to někdy příště dodělají.</description>
+<pubDate>Mon, 28 Dec 2009 14:22:12 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/776892-personas-lehke-motivy-vzhledu-pro-firefox.php#cmt_6</guid>
+</item>
+<item>
+<author>baník</author>
+<title>(Thunderbird 3 a tlačítko pro odpověď dle kontextu) - Souhlas :) to bude určitě spousty nechtěných...</title>
+<link>http://jasnapaka.bloguje.cz/799979-thunderbird-3-a-tlacitko-pro-odpoved-dle-kontextu.php#cmt_2</link>
+<description>Souhlas :) to bude určitě spousty nechtěných vtipných reakcí... Inu, ale ani s těmito tlačítky, ani bez nich, není člověk před svou nepozorností v bezpečí. Z vlastní zkušenosti vím, že na mě blbost čeká za každým rohem... Každopádně Thunderbird 3 vypadá skvěle!!!</description>
+<pubDate>Wed, 23 Dec 2009 14:52:23 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/799979-thunderbird-3-a-tlacitko-pro-odpoved-dle-kontextu.php#cmt_2</guid>
+</item>
+<item>
+<author>kriskami</author>
+<title>(Thunderbird 3 má nového správce hesel) - Ten nový správce hesel bude asi veselá kopa...</title>
+<link>http://jasnapaka.bloguje.cz/759293-thunderbird-3-ma-noveho-spravce-hesel.php#cmt_1</link>
+<description>Ten nový správce hesel bude asi veselá kopa. Stará hesla si nenaimportoval a ani ho nemůžu nikam zadat. signons.sqlite sice v profilu existuje, ale je prázdný a syntax neznám, nedaří se mi přidat ani soukromý mail na gmailu.</description>
+<pubDate>Fri, 11 Dec 2009 15:04:29 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/759293-thunderbird-3-ma-noveho-spravce-hesel.php#cmt_1</guid>
+</item>
+<item>
+<author>Logo</author>
+<title>(Arora...) - Sláva Firefox prostě někomu nedá pokoj :) Tenhled...</title>
+<link>http://jasnapaka.bloguje.cz/727744-arora-zajimavy-webovy-prohlizec-postaveny-na-webkitu.php#cmt_5</link>
+<description>Sláva Firefox prostě někomu nedá pokoj :) Tenhled WebKitový projekt možná má také svoji budoucnost...</description>
+<pubDate>Tue, 08 Dec 2009 07:29:11 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/727744-arora-zajimavy-webovy-prohlizec-postaveny-na-webkitu.php#cmt_5</guid>
+</item>
+<item>
+<author></author>
+<title>(Skyfire - mobilní prohlížeč postavený na Firefoxu) - ja ho pou~ívám a jsem pln spokojen zatím...</title>
+<link>http://jasnapaka.bloguje.cz/650195-skyfire-mobilni-prohlizec-postaveny-na-firefoxu.php#cmt_6</link>
+<description>ja ho pou~ívám a jsem pln spokojen zatím nejlepaí prohlí~e jakej jsem na mobil vidl pYehraje i videa které se na stránkách vyskytují mam nokii n95 a stáhnul jsem ho zadarmo pYímo v telefonu pYes obchod je to free aplikace</description>
+<pubDate>Fri, 27 Nov 2009 11:45:30 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/650195-skyfire-mobilni-prohlizec-postaveny-na-firefoxu.php#cmt_6</guid>
+</item>
+<item>
+<author>Rapidshare</author>
+<title>(Snadné stahování z RapidShare ve Firefoxu) - Na rapidshare používám JDownloader a nemůžu si ho...</title>
+<link>http://jasnapaka.bloguje.cz/778175-snadne-stahovani-z-rapidshare-ve-firefoxu.php#cmt_3</link>
+<description>Na rapidshare používám JDownloader a nemůžu si ho vynachválit!</description>
+<pubDate>Sun, 15 Nov 2009 13:59:03 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/778175-snadne-stahovani-z-rapidshare-ve-firefoxu.php#cmt_3</guid>
+</item>
+<item>
+<author>paja</author>
+<title>(Jak ve Firefoxu otevírat kód stránek v externím...) - Diiiiiiiiiiiky Ti!!!!!!! malem me mrdlo :)</title>
+<link>http://jasnapaka.bloguje.cz/576687-jak-ve-firefoxu-otevirat-kod-stranek-v-externim-editoru.php#cmt_1</link>
+<description>Diiiiiiiiiiiky Ti!!!!!!! malem me mrdlo :)</description>
+<pubDate>Sun, 15 Nov 2009 08:04:34 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/576687-jak-ve-firefoxu-otevirat-kod-stranek-v-externim-editoru.php#cmt_1</guid>
+</item>
+<item>
+<author>alf</author>
+<title>(Jak navázat soubor...) - no jo ale jak např u staženého filmu odeberu...</title>
+<link>http://jasnapaka.bloguje.cz/383939-jak-navazat-soubor-ktery-je-firefoxem-nekompletne-stazen.php#cmt_7</link>
+<description>no jo ale jak např u staženého filmu odeberu příponu part.prosím o detajlní postup/jsem lajk/</description>
+<pubDate>Mon, 02 Nov 2009 07:06:29 +0100</pubDate>
+<guid>http://jasnapaka.bloguje.cz/383939-jak-navazat-soubor-ktery-je-firefoxem-nekompletne-stazen.php#cmt_7</guid>
+</item>
+<item>
+<author>v6ak</author>
+<title>(Jak do Firefoxu 2.0 přidat webovou RSS čtečku) - Dodám něco k postupu:1) pravé tlačítko na...</title>
+<link>http://jasnapaka.bloguje.cz/404022-jak-do-firefoxu-2-0-pridat-webovou-rss-ctecku.php#cmt_9</link>
+<description>Dodám něco k postupu:1) pravé tlačítko na odkaz pro přidání čtečky2) kopírovat3) Soubor/Pracovat offline :D4) Pokusit se jít na doménu, kam se to má obracet (pro Google Reader to je fusion.google.com)5) Jakmile se zobrazí chybová hláška, vložit do adresního řádku obsah stránky a potvrdit.6) Zobrazí se dotaz na přidání čtečky.Jednoduché, co?</description>
+<pubDate>Fri, 23 Oct 2009 13:47:28 +0200</pubDate>
+<guid>http://jasnapaka.bloguje.cz/404022-jak-do-firefoxu-2-0-pridat-webovou-rss-ctecku.php#cmt_9</guid>
+</item>
+</channel></rss>
