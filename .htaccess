@@ -18,10 +18,9 @@
 # CSP
 ###
 <IfModule mod_headers.c>
-    Header set Content-Security-Policy "default-src 'none'; script-src 'self' 'unsafe-inline' www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' www.google-analytics.com; frame-ancestors 'none'; upgrade-insecure-requests"
-    Header set X-Frame-Options "DENY"
+    Header set Content-Security-Policy "default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; frame-ancestors 'self'; frame-src 'self'; form-action 'none'; base-uri 'none'; upgrade-insecure-requests"
     Header set X-Content-Type-Options "nosniff"
     Header set X-XSS-Protection "1; mode=block"
-    Header set Referrer-Policy "no-referrer-when-downgrade"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
